@@ -1,0 +1,15 @@
+.boton1{
+    background-color: var(--azul-oscuro);
+    border: solid 1px var(--azul-claro);
+    border-radius: 30px;
+    padding: 8px 25px;
+    box-shadow: 2px 12px 33px -13px rgba(14,58,122,1);
+-webkit-box-shadow: 2px 12px 33px -13px rgba(14,58,122,1);
+-moz-box-shadow: 2px 12px 33px -13px rgba(14,58,122,1);
+}
+
+.boton1 a{
+    text-decoration: none;
+    color: var(--verde);
+    font-weight: 600;
+}

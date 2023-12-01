@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --azul-oscuro: #030712;
+  --azul-claro: #0E3A7A;
+  --bordes: #1c1f27;
+  --verde: #2ed198;
+  --textos: #A1A1A1;
+}
+
+body{
+  background-color: var(--azul-oscuro);
+  color: var(--textos);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 92%;
+    margin: auto;
+    padding: 0;
+  }
+}
+
