@@ -1,6 +1,13 @@
 .titulo-cloud{
     position: absolute;
-    left: 80px;
+    font-size: 30px;
+    width: 10ch;
+    color: white;
+}
+
+.titulo-cloud strong{
+    font-size: 40px;
+    color: var(--verde);
 }
 .contenedor-cloud{
     border-top : solid 2px var(--bordes);
@@ -32,4 +39,8 @@
     .soluciones-cloud {
         width: 95%;
     }   
+    .titulo-cloud{
+        position: relative;
+        margin: 20px;
+    }
 }
