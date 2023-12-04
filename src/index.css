@@ -23,7 +23,7 @@ body{
   margin: auto;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .container {
     max-width: 92%;
     margin: auto;

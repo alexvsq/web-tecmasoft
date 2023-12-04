@@ -3,6 +3,7 @@
     font-size: 30px;
     width: 10ch;
     color: white;
+    margin-top: 20px;
 }
 
 .titulo-cloud strong{
@@ -12,6 +13,8 @@
 .contenedor-cloud{
     border-top : solid 2px var(--bordes);
     border-bottom : solid 2px var(--bordes);
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .soluciones-cloud-caja{
     width: 1200px;

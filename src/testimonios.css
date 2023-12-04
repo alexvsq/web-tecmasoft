@@ -1,0 +1,77 @@
+.testimonios{
+    margin-top: 40px;
+    background-color: var(--verde);
+    color: white;
+}
+.testimonios-flex{
+    display: flex;
+}
+.testimonios-flex article{
+    width: 50%;
+}
+.testimonios-flex aside{
+width: 50%;
+}
+
+
+.testimonios-titulo {
+    margin-top: 40px;
+}
+.testimonios-titulo h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.testimonios-titulo span{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--azul-oscuro);
+}
+.testimonio-card{
+    background-color: white;
+    color: var(--azul-oscuro);
+    padding: 20px;
+    border-radius: 20px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px auto;
+}
+.testimonio-card-texto{
+    font-weight: 500;
+    text-align: center;
+    max-width: 35ch;
+}
+.testimonio-card-nombre h2{
+    font-size: 14px;
+}
+.testimonio-card-nombre p{
+    font-size: 12px;
+    font-weight: 300;
+}
+.footer-card{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    width: 100%;
+}
+.testimonio-card-flechas{
+    display: flex;
+    gap: 15px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .testimonios-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonios-flex article{
+        width: 100%;
+    }
+    .testimonios-flex aside{
+    width: 100%;
+    }
+    .testimonio-card{
+        width: 90%;}
+}
