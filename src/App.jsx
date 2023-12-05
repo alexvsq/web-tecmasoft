@@ -8,7 +8,7 @@ import Introduccion from './introduccion.jsx'
 import Productos from './productos.jsx'
 import ServiciosCloud from './servicios-cloud.jsx'
 import Testimonios from './testimonios.jsx'
-
+import Nosotros from "./nosotros.jsx"
 
 
 
@@ -24,7 +24,7 @@ function App() {
     <Productos />
     <ServiciosCloud />
     <Testimonios />
-
+    <Nosotros />
 
 
 
