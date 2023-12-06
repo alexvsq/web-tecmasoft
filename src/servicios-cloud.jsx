@@ -9,7 +9,7 @@ export default function ServiciosCloud() {
       <div className="contenedor-cloud">
         <section className="container">
         <div className=" titulo-cloud ">
-          Soluciones <strong> Cloud </strong>
+          Soluciones <br /> <strong> Cloud </strong>
         </div>
           <section className="soluciones-cloud ">
             <article className="card-cloud">

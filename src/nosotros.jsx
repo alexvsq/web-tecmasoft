@@ -6,8 +6,10 @@ export default function Nosotros() {
     <section className="nosotros-contenedor">
       <div className="container">
         <div className="nosotros">
-          <article>
-            <div>Nosotros</div>
+          <article className="nosotros-article">
+            <div className="nosotros-titulo">Nosotros
+              <div style={{ width: '100px', height: "2px", backgroundColor: "var(--verde)" }}></div>
+            </div>
             <p>
               En Tecmasoft, somos más que una consultora de sistemas; somos
               arquitectos de soluciones tecnológicas diseñadas para impulsar el
@@ -16,19 +18,19 @@ export default function Nosotros() {
               proyecto para ofrecer respuestas precisas a las demandas del
               entorno.
             </p>
-            <img src="/nosotros1.jpg" alt="nostros" />
+            <img src="/nosotros2.jpg" alt="nostros" />
           </article>
 
-          <aside>
+          <aside className="nosotros-aside">
             <div>
-                <h2>Visión</h2>
-                <p>Buscamos ser la empresa líder en tecnología y consultoría en el país, reconocida por la excelencia en proyectos de TI para instituciones públicas y privadas.</p>
+              <h2>Visión</h2>
+              <p>Buscamos ser la empresa líder en tecnología y consultoría en el país, reconocida por la excelencia en proyectos de TI para instituciones públicas y privadas.</p>
             </div>
             <div>
-                <h2>Misión</h2>
-                <p>Contribuir al éxito de nuestros clientes ofreciendo servicios de calidad, basados en soluciones tecnológicas que no solo reducen costos, sino que también mejoran la competitividad de las empresas en el panorama peruano.</p>
+              <h2>Misión</h2>
+              <p>Contribuir al éxito de nuestros clientes ofreciendo servicios de calidad, basados en soluciones tecnológicas que no solo reducen costos, sino que también mejoran la competitividad de las empresas en el panorama peruano.</p>
             </div>
-            <img src="/nosotros2.jpg" alt="nosotros2" />
+            <img src="/nosotros1.jpg" alt="nosotros2" />
           </aside>
         </div>
       </div>
