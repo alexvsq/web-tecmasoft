@@ -6,7 +6,7 @@ export default function Boton1({texto , path}) {
 
         <button className='boton1' >
 
-            <a href={path}>{texto}</a>
+            <a href= {path} >{texto}</a>
         
         </button>
     )

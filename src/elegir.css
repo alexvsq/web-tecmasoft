@@ -1,6 +1,6 @@
 .elegir {
     width: 100%;
-    background-image: url('/Recurso 5.svg');
+    background-image: url('/Recurso 5.svg') ,  radial-gradient(at center top, rgba(8, 33, 64, 0.3), rgba(3, 8, 12, 0.3));
     background-size: cover;
     border-top: solid 2px var(--bordes);
     border-bottom: solid 2px var(--bordes);

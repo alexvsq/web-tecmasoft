@@ -3,7 +3,7 @@ import "./nosotros.css";
 
 export default function Nosotros() {
   return (
-    <section className="nosotros-contenedor">
+    <section className="nosotros-contenedor" id="nosotros">
       <div className="container">
         <div className="nosotros">
           <article className="nosotros-article">

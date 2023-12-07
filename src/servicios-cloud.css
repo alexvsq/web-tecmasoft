@@ -34,6 +34,15 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
+    text-align: center;
+ height: 145px;
+}
+
+.card-cloud:hover{
+    transition: 0.3s;
+
+    background-color: var(--bordes);
+    color: white;
 }
 
 @media screen and (max-width: 750px) {

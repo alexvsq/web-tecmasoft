@@ -1,6 +1,12 @@
+
 *{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: var(--textos);
 }
 
 :root {
@@ -15,6 +21,24 @@ body{
   background-color: var(--azul-oscuro);
   color: var(--textos);
   font-family: 'Poppins', sans-serif;
+
+}
+
+.fade-enter{
+  opacity: 0;
+}
+.fade-exit{
+  opacity: 1;
+}
+.fade-enter-active{
+  opacity: 1;
+}
+.fade-exit-active{
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active{
+  transition: opacity 500ms;
 }
 
 .container {

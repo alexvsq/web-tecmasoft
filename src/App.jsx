@@ -9,14 +9,14 @@ import Productos from './productos.jsx'
 import ServiciosCloud from './servicios-cloud.jsx'
 import Testimonios from './testimonios.jsx'
 import Nosotros from "./nosotros.jsx"
-
+import Footer from "./footer.jsx"
 
 
 function App() {
 
   return (
     <>
-    <Nav />
+    < Nav />
     <Header />
     <Introduccion />
     <Servicios />
@@ -25,14 +25,8 @@ function App() {
     <ServiciosCloud />
     <Testimonios />
     <Nosotros />
+    <Footer />
 
-
-
-    <div className=''>
-
-     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur earum corrupti error nesciunt temporibus reiciendis assumenda officiis odit. Molestias excepturi nostrum quod est ipsam repudiandae ut quidem obcaecati eveniet assumenda!</h1>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aspernatur inventore. Ipsa ex adipisci, recusandae repudiandae perferendis voluptates autem unde sint, dignissimos possimus reiciendis mollitia totam numquam quas expedita commodi.</p>
-    </div>
     </>
   )
 }

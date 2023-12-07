@@ -1,7 +1,11 @@
 import React from "react";
 import "./testimonios.css";
+import { info } from "autoprefixer";
 
 export default function Testimonios() {
+
+  
+
   return (
     <div className="testimonios">
       <section className="container testimonios-flex">

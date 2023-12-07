@@ -1,5 +1,6 @@
 import React from 'react'
 import './servicios.css'
+import TextoEfecto from './components/TextoEfecto'
 import Boton1 from './components/boton1.jsx'
 import BannerServicios from './banner-servicios.jsx'
 
@@ -8,12 +9,12 @@ export default function Servicios() {
         <>
             <BannerServicios />
 
-            <div className='container'>
+            <div className='container ' id='servicios'>
 
                 <section className='titulo-servicios'>
 
                     <h2>Nuestros <br /> <span>Servicios</span></h2>
-                    <p>Nuestros servicios especializados impulsan tu empresa con soluciones a medida. Con un enfoque personalizado, llevamos tu infraestructura al siguiente nivel.</p>
+                    <p> <TextoEfecto text=" Nuestros servicios especializados impulsan tu empresa con soluciones a medida. Con un enfoque personalizado, llevamos tu infraestructura al siguiente nivel." /></p>
 
                 </section>
             </div>
@@ -38,6 +39,7 @@ export default function Servicios() {
                         <div>
                             <Boton1
                                 texto='Más Información'
+                                path={"#"}
                             />
                         </div>
 
@@ -58,6 +60,7 @@ export default function Servicios() {
                         <div>
                             <Boton1
                                 texto='Más Información'
+                                path={"#"}
                             />
                         </div>
 
@@ -86,6 +89,7 @@ export default function Servicios() {
                         <div>
                             <Boton1
                                 texto='Más Información'
+                                path={"#"}
                             />
                         </div>
 
@@ -106,6 +110,7 @@ export default function Servicios() {
                         <div>
                             <Boton1
                                 texto='Más Información'
+                                path={"#"}
                             />
                         </div>
 

@@ -9,20 +9,22 @@ export default function Nav() {
         <>
             <nav className='nav-bg'>
                 <nav className='nav-header'>
+                    <div className="nav-logo" >
+                        <a href=""><img src="/logo-tecmasoft.svg" href="#" /></a>
+                    </div>
 
-                    <img src="/logo-tecmasoft.svg" className="nav-logo" />
 
                     <ul className='lista-nav'>
-                        <li>Nosotros</li>
-                        <li>Contacto</li>
-                        <li>Intranet</li>
-                        <li>Blog</li>
+                        <li> <a href="#nosotros">Nosotros</a></li>
+                        <li><a href="">Contacto</a>  </li>
+                        <li><a href="">Intranet</a>  </li>
+                        <li><a href="">Blog</a>  </li>
                     </ul>
 
                     <ul className='lista-nav-icons'>
-                        <li> <img src="/facebook-logo.svg" alt="icono" /></li>
-                        <li> <img src="/twitter-logo.svg" alt="icono" /></li>
-                        <li> <img src="/youtube-logo.svg" alt="icono" /></li>
+                        <li> <a href=""> <img src="/facebook-logo.svg" alt="icono" /></a> </li>
+                        <li> <a href=""><img src="/twitter-logo.svg" alt="icono" /></a> </li>
+                        <li> <a href=""><img src="/youtube-logo.svg" alt="icono" /></a> </li>
                     </ul>
 
 
@@ -38,19 +40,19 @@ export default function Nav() {
             <div className={`menu-mobile ${showMenu ? 'open' : ''}`}>
 
                 <ul className='lista-nav2'>
-                    <li>Nosotros</li>
+                    <li onClick={() => setShowMenu(!showMenu)}> <a href="#nosotros">Nosotros</a></li>
                     <div className='linea-div-lista'></div>
-                    <li>Contacto</li>
+                    <li onClick={() => setShowMenu(!showMenu)}><a href="#">Contacto</a>  </li>
                     <div className='linea-div-lista'></div>
-                    <li>Intranet</li>
+                    <li onClick={() => setShowMenu(!showMenu)}><a href="#">Intranet</a>  </li>
                     <div className='linea-div-lista'></div>
-                    <li>Blog</li>
+                    <li onClick={() => setShowMenu(!showMenu)}><a href="#">Blog</a>  </li>
                 </ul>
 
                 <ul className='lista-nav-icons2 '>
-                    <li> <img src="/facebook-logo.svg" alt="icono" /></li>
-                    <li> <img src="/twitter-logo.svg" alt="icono" /></li>
-                    <li> <img src="/youtube-logo.svg" alt="icono" /></li>
+                    <li onClick={() => setShowMenu(!showMenu)}> <a href="#"> <img src="/facebook-logo.svg" alt="icono" /></a> </li>
+                    <li onClick={() => setShowMenu(!showMenu)}> <a href="#"><img src="/twitter-logo.svg" alt="icono" /></a> </li>
+                    <li onClick={() => setShowMenu(!showMenu)}> <a href="#"><img src="/youtube-logo.svg" alt="icono" /></a> </li>
                 </ul>
             </div>
         </>
