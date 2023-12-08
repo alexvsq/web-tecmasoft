@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import './nav.css'
+import { Link } from 'react-router-dom'
 
 export default function Nav() {
 
@@ -10,12 +11,12 @@ export default function Nav() {
             <nav className='nav-bg'>
                 <nav className='nav-header'>
                     <div className="nav-logo" >
-                        <a href=""><img src="/logo-tecmasoft.svg" href="#" /></a>
+                        <Link to="/"><img src="/logo-tecmasoft.svg" href="#" /></Link>
                     </div>
 
 
                     <ul className='lista-nav'>
-                        <li> <a href="#nosotros">Nosotros</a></li>
+                        <li> <Link to="/">Nosotros</Link></li>
                         <li><a href="">Contacto</a>  </li>
                         <li><a href="">Intranet</a>  </li>
                         <li><a href="">Blog</a>  </li>

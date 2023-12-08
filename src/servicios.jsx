@@ -39,7 +39,7 @@ export default function Servicios() {
                         <div>
                             <Boton1
                                 texto='Más Información'
-                                path={"#"}
+                                path={"/seguridadtecnologica"}
                             />
                         </div>
 

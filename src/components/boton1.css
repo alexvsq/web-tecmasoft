@@ -19,11 +19,11 @@
     -moz-box-shadow: 2px 4px 50px 0px rgba(14, 58, 122, 1);
 }
 
-.boton1:hover a{
+.boton1:hover {
     color: var(--azul-oscuro);
 }
 
-.boton1 a {
+.boton1 {
     color: var(--verde);
     text-decoration: none;
     font-weight: 600;

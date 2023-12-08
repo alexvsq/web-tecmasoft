@@ -13,8 +13,8 @@ export default function Header() {
              
             </div>
             <div className='botones-header'>
-                    <a className='boton1-header' href="#productos">Productos</a>
-                    <a className='boton2-header' href="#servicios">Servicios</a>
+                    <a className='boton1-header' href="#servicios">Servicios</a>
+                    <a className='boton2-header' href="#productos">Productos</a>
                 </div>
         </header>
     )
