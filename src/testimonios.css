@@ -1,77 +1,114 @@
-.testimonios{
+.testimonios {
     margin-top: 40px;
     background-color: var(--verde);
     color: white;
+    min-height: 325px;
 }
-.testimonios-flex{
+
+.testimonios-flex {
     display: flex;
 }
-.testimonios-flex article{
+
+.testimonios-flex article {
     width: 50%;
 }
-.testimonios-flex aside{
-width: 50%;
+
+.testimonios-flex aside {
+    width: 50%;
 }
 
 
 .testimonios-titulo {
     margin-top: 40px;
 }
-.testimonios-titulo h2{
+
+.testimonios-titulo h2 {
     font-size: 25px;
     font-weight: 500;
 }
-.testimonios-titulo span{
+
+.testimonios-titulo span {
     font-size: 40px;
     font-weight: 700;
     color: var(--azul-oscuro);
 }
-.testimonio-card{
+
+.testimonio-card {
     background-color: white;
     color: var(--azul-oscuro);
     padding: 20px;
     border-radius: 20px;
     width: 75%;
+    min-height: 197px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin: 35px auto;
 }
-.testimonio-card-texto{
+
+.testimonio-card-texto {
     font-weight: 500;
     text-align: center;
-    max-width: 35ch;
+    max-width: 40ch;
 }
-.testimonio-card-nombre h2{
+
+.testimonio-card-nombre h2 {
     font-size: 14px;
 }
-.testimonio-card-nombre p{
+
+.testimonio-card-nombre p {
     font-size: 12px;
     font-weight: 300;
 }
-.footer-card{
+
+.footer-card {
     display: flex;
-   align-items: end;
-    justify-content: space-around;
+    align-items: end;
+    justify-content: space-between;
     width: 100%;
+    margin-top: 20px;
 }
-.testimonio-card-flechas{
+
+.footer-card-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-card-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.testimonio-card-flechas {
     display: flex;
     gap: 15px;
 }
 
+.testimonio-card-flechas img:hover {
+    transition: 0.3s;
+
+    opacity: 0.8;
+}
+
 
 @media screen and (max-width: 750px) {
-    .testimonios-flex{
+    .testimonios-flex {
         display: flex;
         flex-direction: column;
     }
-    .testimonios-flex article{
+
+    .testimonios-flex article {
         width: 100%;
     }
-    .testimonios-flex aside{
-    width: 100%;
+
+    .testimonios-flex aside {
+        width: 100%;
     }
-    .testimonio-card{
-        width: 90%;}
+
+    .testimonio-card {
+        width: 90%;
+    }
 }
