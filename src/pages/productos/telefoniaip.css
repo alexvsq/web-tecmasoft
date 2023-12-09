@@ -5,3 +5,43 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.telefonias-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card-telefonia{
+    border: solid 2px var(--bordes);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-telefonia:hover{
+    transition: 0.3s;
+    background-color: var(--bordes);
+}
+
+.card-telefonia img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-telefonia h2{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.card-telefonia p{
+    width: 90%;
+    color: var(--verde);
+    text-align: right;
+    font-weight: 500;
+}

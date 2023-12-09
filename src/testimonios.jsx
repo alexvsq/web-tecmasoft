@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./testimonios.css";
-import { info } from "autoprefixer";
 
 export default function Testimonios() {
+  const testimonios = [
+    {
+      texto:
+        "Gracias a Perulinux hemos ahorrado en costos de infraestructura tecnológica y hemos recibido atención de calidad, ayudándonos proactivamente para que nuestro negocio siga creciendo.",
+      nombre: "Victor Gamarra",
+      cargo: "Jefe de Infraestructura y Comunicaciones-Grupo Rockys",
+    },
+    {
+      texto:
+        "Perulinux nos ha demostrado ser más que un proveedor; es un aliado estratégico en tecnología. La empresa está respaldada por asesoría personalizada, calidad en el trabajo y respuestas rápidas y oportunas a cada requerimiento.",
+      nombre: "Victor Gamarra",
+      cargo: "Jefe de Infraestructura y Comunicaciones-Grupo Rockys",
+    },
+    {
+      texto:
+        "Tenemos más de 5 años en contacto con Tecmasoft. Siempre que hay un problema que no podemos resolver, lo escalamos a Tecmasoft y recibimos una solución eficiente y personalizada.",
+      nombre: "Anthony Paravé",
+      cargo: "Jefe de Sistemas - Medifarma",
+    },
+  ];
 
-  
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleArrowClick = (direction) => {
+    const totalItems = testimonios.length;
+    let newIndex;
+
+    if (direction === "left") {
+      newIndex = currentIndex > 0 ? currentIndex - 1 : totalItems - 1;
+    } else {
+      newIndex = currentIndex < totalItems - 1 ? currentIndex + 1 : 0;
+    }
+
+    setCurrentIndex(newIndex);
+  };
 
   return (
     <div className="testimonios">
@@ -16,25 +48,31 @@ export default function Testimonios() {
           </h2>
         </article>
 
-        <aside >
+        <aside>
           <div className="testimonio-card">
             <p className="testimonio-card-texto">
-              "Tenemos más de 5 años en contacto con Tecmasoft, y siempre que
-              hay un problema que no Io podamos resolver Io escalamos a
-              Tecmasoft y recibimos una solucion eficiente y personalizada.
+              {testimonios[currentIndex].texto}
             </p>
             <footer className="footer-card">
               <div>
                 <img src="" alt="" />
                 <div className="testimonio-card-nombre">
-                  <h2>Anthony Paravé</h2>
-                  <p>Jefe de Sistemas - Medifarma</p>
+                  <h2>{testimonios[currentIndex].nombre}</h2>
+                  <p>{testimonios[currentIndex].cargo}</p>
                 </div>
               </div>
 
               <div className="testimonio-card-flechas">
-                <img src="/arrow-left-azul.svg" alt="" />
-                <img src="/arrow-right-azul.svg" alt="" />
+                <img
+                  onClick={() => handleArrowClick("left")}
+                  src="/arrow-left-azul.svg"
+                  alt="boton l"
+                />
+                <img
+                  onClick={() => handleArrowClick("right")}
+                  src="/arrow-right-azul.svg"
+                  alt="boton r"
+                />
               </div>
             </footer>
           </div>
