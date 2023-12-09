@@ -1,6 +1,6 @@
 import React from 'react'
 import './productos.css'
-import TextoEfecto from './components/TextoEfecto'
+import { Link } from 'react-router-dom'
 
 export default function Productos() {
     return (
@@ -13,7 +13,7 @@ export default function Productos() {
             </header>
 
             <main className='productos-grid'>
-                <a href="#">
+                <Link to="firewallcomerciales">
                     <article className='card-producto1'>
                         <img className='card-producto1-icon' src="/productos/firewall-comerciales.svg" alt="" />
                         <h3>Firewall Comerciales</h3>
@@ -28,9 +28,9 @@ export default function Productos() {
 
                         </footer>
                     </article>
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to="antiviruscomerciales">
                     <article className='card-producto1'>
                         <img src="/productos/antivirus-antiransomware.svg" alt="" />
                         <h3>Antivirus Antiransomware</h3>
@@ -44,9 +44,9 @@ export default function Productos() {
 
                         </footer>
                     </article>
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to="antispam">
 
                     <article className='card-producto1'>
                         <img src="/productos/antispam.svg" alt="" />
@@ -62,9 +62,9 @@ export default function Productos() {
 
                         </footer>
                     </article>
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to="telefoniaip">
 
                     <article className='card-producto1'>
                         <img src="/productos/telefonia.svg" alt="" />
@@ -80,7 +80,7 @@ export default function Productos() {
 
                         </footer>
                     </article>
-                </a>
+                </Link>
 
 
 

@@ -1,23 +1,27 @@
-.titulo-cloud{
+.titulo-cloud {
     position: absolute;
     font-size: 30px;
     color: white;
     margin-top: 20px;
 }
-.titulo-cloud strong{
+
+.titulo-cloud strong {
     font-size: 40px;
     color: var(--verde);
 }
-.contenedor-cloud{
-    border-top : solid 2px var(--bordes);
-    border-bottom : solid 2px var(--bordes);
+
+.contenedor-cloud {
+    border-top: solid 2px var(--bordes);
+    border-bottom: solid 2px var(--bordes);
     margin-top: 60px;
     margin-bottom: 60px;
 }
-.soluciones-cloud-caja{
+
+.soluciones-cloud-caja {
     width: 1200px;
     margin: auto;
 }
+
 .soluciones-cloud {
     width: 65%;
     border-top: solid 2px var(--bordes);
@@ -27,7 +31,7 @@
     margin-left: auto;
 }
 
-.card-cloud{
+.card-cloud {
     border: solid 1px var(--bordes);
     display: flex;
     flex-direction: column;
@@ -35,10 +39,15 @@
     gap: 20px;
     padding: 20px;
     text-align: center;
- height: 145px;
+    height: 145px;
 }
 
-.card-cloud:hover{
+.card-cloud img{
+    max-width: 55px;
+    max-height: 55px;
+}
+
+.card-cloud:hover {
     transition: 0.3s;
 
     background-color: var(--bordes);
@@ -48,8 +57,9 @@
 @media screen and (max-width: 750px) {
     .soluciones-cloud {
         width: 95%;
-    }   
-    .titulo-cloud{
+    }
+
+    .titulo-cloud {
         position: relative;
         margin-top: 0;
         margin: 20px;

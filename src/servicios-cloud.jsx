@@ -23,59 +23,59 @@ export default function ServiciosCloud() {
 
             <a href="">
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/immail.svg" alt="zimbra" />
                 <p>Immail Cloud</p>
               </article>
             </a>
 
             <a href="">
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/vps.svg" alt="zimbra" />
                 <p>Servidores VPS</p>
               </article>
             </a>
             <a href="">
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/zabbix.svg" alt="zimbra" />
                 <p>Zabbix Cloud</p>
               </article>
             </a>
             <a href="">
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/nxt.svg" alt="zimbra" />
                 <p>Nextcloud</p>
               </article>
             </a>
             <a href="">
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/pbx.svg" alt="zimbra" />
                 <p>Central PBX Cloud</p>
               </article>
             </a>
             <a href="">
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/callcenter.svg" alt="zimbra" />
                 <p>Sistema de Call Center Cloud</p>
               </article>
             </a>
             <a href="">
 
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/proxmox.svg" alt="zimbra" />
                 <p>Proxmox Datacenter</p>
               </article>
             </a>
             <a href="">
 
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/backup.svg" alt="zimbra" />
                 <p>Backup Cloud</p>
               </article>
             </a>
             <a href="">
 
               <article className="card-cloud">
-                <img src="/cloud/zimbra.svg" alt="zimbra" />
+                <img src="/cloud/jitsi.svg" alt="zimbra" />
                 <p>Videoconferencia JITSI</p>
               </article>
               </a>

@@ -1,8 +1,19 @@
 import React from 'react'
 
+import ScrollToTop from '../components/ScrollToTop';
+
+import {motion} from "framer-motion"
+
 export default function Gestionempresarial() {
   return (
-    <>
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
+
+      <ScrollToTop />
+
       <section style={{ paddingTop: "100px" }} className='container'>
 
         <div className='seguridad-tecnologica-introducion'>
@@ -198,7 +209,7 @@ export default function Gestionempresarial() {
         </div>
 
       </section>
-    </>
+    </motion.div>
 
   )
 }
