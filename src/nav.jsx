@@ -1,10 +1,19 @@
-import { React, useState } from 'react'
-import './nav.css'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Link as ScrollLink, Events } from 'react-scroll';
+import './nav.css';
 
 export default function Nav() {
+    const location = useLocation();
+    const isHome = location.pathname === '/';
 
-    const [showMenu, setShowMenu] = useState(false)
+    const [showMenu, setShowMenu] = useState(false);
+
+
+
+    // Si estás en la página principal, usa ScrollLink, de lo contrario, usa Link de react-router-dom
+    const NavLinkComponent = isHome ? ScrollLink : Link;
+
 
     return (
         <>
@@ -16,7 +25,11 @@ export default function Nav() {
 
 
                     <ul className='lista-nav'>
-                        <li> <Link to="/">Nosotros</Link></li>
+                        <li>  <NavLinkComponent
+                            to={isHome ? "nosotros" : "/#nosotros"}
+                            smooth={true}
+                            duration={300}
+                        >Nosotros</NavLinkComponent></li>
                         <li><a href="">Contacto</a>  </li>
                         <li><a href="">Intranet</a>  </li>
                         <li><a href="">Blog</a>  </li>
@@ -41,7 +54,12 @@ export default function Nav() {
             <div className={`menu-mobile ${showMenu ? 'open' : ''}`}>
 
                 <ul className='lista-nav2'>
-                    <li onClick={() => setShowMenu(!showMenu)}> <a href="#nosotros">Nosotros</a></li>
+                    <li onClick={() => setShowMenu(!showMenu)}>  <NavLinkComponent
+                        to={isHome ? "nosotros" : "/#nosotros"}
+                        smooth={true}
+                        duration={500}
+                    >Nosotros</NavLinkComponent>
+                    </li>
                     <div className='linea-div-lista'></div>
                     <li onClick={() => setShowMenu(!showMenu)}><a href="#">Contacto</a>  </li>
                     <div className='linea-div-lista'></div>

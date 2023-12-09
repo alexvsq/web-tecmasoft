@@ -1,9 +1,13 @@
 import React from "react";
 import "./nosotros.css";
 
+
+
 export default function Nosotros() {
   return (
-    <section className="nosotros-contenedor" id="nosotros">
+
+
+    <section className="nosotros-contenedor" id="nosotros" >
       <div className="container">
         <div className="nosotros">
           <article className="nosotros-article">
@@ -35,5 +39,6 @@ export default function Nosotros() {
         </div>
       </div>
     </section>
+
   );
 }

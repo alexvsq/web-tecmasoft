@@ -58,9 +58,9 @@ export default function Servicios() {
                         </ul>
 
                         <div>
-                            <Boton1
+                        <Boton1
                                 texto='Más Información'
-                                path={"#"}
+                                path={"/gestionempresarial"}
                             />
                         </div>
 
@@ -87,9 +87,9 @@ export default function Servicios() {
                         </ul>
 
                         <div>
-                            <Boton1
+                        <Boton1
                                 texto='Más Información'
-                                path={"#"}
+                                path={"/alamacenamientoredes"}
                             />
                         </div>
 
@@ -108,9 +108,9 @@ export default function Servicios() {
                         </ul>
 
                         <div>
-                            <Boton1
+                        <Boton1
                                 texto='Más Información'
-                                path={"#"}
+                                path={"/infraestructura"}
                             />
                         </div>
 
