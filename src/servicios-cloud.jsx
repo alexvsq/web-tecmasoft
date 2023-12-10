@@ -1,15 +1,44 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 
 import "./servicios-cloud.css";
 import Tarjeta from "./components/tarjeta";
 
 export default function ServiciosCloud() {
 
-    const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+      setShow(!show);
+  }
+  
+
+  const info = [
+    {
+      id: 1,
+      titulo: "Zimbra cloud",
+      texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
+    },
+    {
+      id: 2,
+      titulo: "Immail Cloud",
+      texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
+    },
+    {
+      id: 3,
+      titulo: "Servidores VPS",
+      texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
+    }
+  ]
+
+
+
 
   return (
     <>
-        <Tarjeta />
+
+      <Tarjeta 
+        show={show}
+      />
 
       <div className="contenedor-cloud">
         <section className="container">
@@ -18,12 +47,12 @@ export default function ServiciosCloud() {
           </div>
           <section className="soluciones-cloud ">
 
-            <a href="">
-              <article className="card-cloud">
+    
+              <article onClick={handleShow} className="card-cloud">
                 <img src="/cloud/zimbra.svg" alt="zimbra" />
                 <p>Zimbra cloud</p>
               </article>
-            </a>
+ 
 
             <a href="">
               <article className="card-cloud">
@@ -82,9 +111,9 @@ export default function ServiciosCloud() {
                 <img src="/cloud/jitsi.svg" alt="zimbra" />
                 <p>Videoconferencia JITSI</p>
               </article>
-              </a>
+            </a>
 
-      
+
           </section>
         </section>
       </div>
