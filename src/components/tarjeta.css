@@ -1,0 +1,5 @@
+.tarjeta-backgroud {
+    background-color: rgba(255, 0, 0, 0.408);
+    position: fixed;
+    inset: 10%;
+}

@@ -39,9 +39,9 @@ const TextoEfecto = ({ text }) => {
   }, [isVisible, text, uniqueId]);
 
   return (
-    <div id={uniqueId}>
+    <p id={uniqueId}>
       {/* Contenido */}
-    </div>
+    </p>
   );
 };
 

@@ -26,7 +26,7 @@ export default function Infraestructura() {
           <aside className='introducion-video'>
 
             <iframe
-              src="https://www.youtube.com/embed/mgSjaS8yXFA?si=hMzr5uE3LG6R058D"
+              src="https://www.youtube-nocookie.com/embed/mgSjaS8yXFA?si=hMzr5uE3LG6R058D"
               title="¿Qué es Firewall?"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -79,7 +79,7 @@ export default function Infraestructura() {
           <aside className='introducion-video'>
 
             <iframe
-              src="https://www.youtube.com/embed/3KhfU7v0VSo?si=GZ3TzcUjaiRLryi4"
+              src="https://www.youtube-nocookie.com/embed/3KhfU7v0VSo?si=GZ3TzcUjaiRLryi4"
               title="¿Qué es Firewall?"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

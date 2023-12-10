@@ -45,7 +45,7 @@ export default function Antiviruscomerciales() {
 
           <aside className='introducion-video'>
             <iframe
-              src="https://www.youtube.com/embed/YW6J-U-zP9I?si=N7NPPedyIYvMbhF_"
+              src="https://www.youtube-nocookie.com/embed/YW6J-U-zP9I?si=N7NPPedyIYvMbhF_"
               title="¿Qué es Firewall?"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -117,7 +117,7 @@ export default function Antiviruscomerciales() {
 
           <aside className='introducion-video'>
             <iframe
-              src="https://www.youtube.com/embed/rqJuVJGSef4?si=ct23f6HZRjuXmfHu"
+              src="https://www.youtube-nocookie.com/embed/rqJuVJGSef4?si=ct23f6HZRjuXmfHu"
               title="¿Qué es Firewall?"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -202,7 +202,7 @@ export default function Antiviruscomerciales() {
 
 
 
-
+        
         <div className='dosarticleflex'>
           <article className='dosarticleuno'>
             <h2 className='subtitulo-pages'> Antiphishing, antispam y anti-BEC </h2>

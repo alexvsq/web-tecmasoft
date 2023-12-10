@@ -14,7 +14,6 @@ export default function SeguridadTecnologica() {
     >
 
       <ScrollToTop />
-
       <section style={{ paddingTop: "100px" }} className='container'>
 
         <div className='seguridad-tecnologica-introducion'>
@@ -25,10 +24,11 @@ export default function SeguridadTecnologica() {
               La seguridad perimetral de una empresa es primordial. Los ataques por red y pérdidas de información ocasionan un gran trastorno y no solo la imagen si no también el funcionamiento y progreso de una empresa se ven afectados. Una plataforma robusta para el control de accesos y protección de los servicios informáticos garantiza un correcto aprovechamiento de la infraestructura y garantiza la integridad y confidencialidad de la información.</p>
 
           </div>
-
+{/*  www.youtube-nocookie.com/embed/ */}
           <aside className='introducion-video'>
             <iframe
-              src="https://www.youtube.com/embed/mcTCrTneeco"
+            key='gasdasdc'
+              src="https://www.youtube-nocookie.com/embed/mcTCrTneeco"
               title="¿Qué es Firewall?"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -240,6 +240,9 @@ export default function SeguridadTecnologica() {
 
         </div>
       </section>
+
+      
+
     </motion.div>
   )
 }

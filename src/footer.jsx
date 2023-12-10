@@ -76,22 +76,22 @@ export default function Footer() {
 
                     <div className='icons-footer'>
                         <img src="/footer/icon-ubicacion.svg" alt="" />
-                        <p>Av Arenales 1912 Oficna 805 - Lince - Lima</p>
+                        <p>tecamsoft (dirección)</p>
                     </div>
 
                     <div className='icons-footer'>
                         <img src="/footer/icon-telefono.svg" alt="" />
-                        <p>01 640 5800</p>
+                        <p>tecamsoft (número)</p>
                     </div>
 
                     <div className='icons-footer'>
                         <img src="/footer/icon-mail.svg" alt="" />
-                        <p>ventas@perulinux.pe</p>
+                        <p>tecamsoft (correo)</p>
                     </div>
 
                     <div className='icons-footer'>
                         <img src="/footer/icon-wsp.svg" alt="" />
-                        <p>+51 994 629 700</p>
+                        <p>tecamsoft (número)</p>
                     </div>
                 </div>
             </footer>

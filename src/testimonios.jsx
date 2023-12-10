@@ -6,14 +6,14 @@ export default function Testimonios() {
   const testimonios = [
     {
       texto:
-        "Gracias a Perulinux hemos ahorrado en costos de infraestructura tecnológica y hemos recibido atención de calidad, ayudándonos proactivamente para que nuestro negocio siga creciendo.",
+        "Gracias a Tecmasoft hemos ahorrado en costos de infraestructura tecnológica y hemos recibido atención de calidad, ayudándonos proactivamente para que nuestro negocio siga creciendo.",
       nombre: "Victor Gamarra",
       cargo: "Jefe de Infraestructura y Comunicaciones-Grupo Rockys",
       image: "/testimonios/v-gamarra.jpg"
     },
     {
       texto:
-        "Perulinux nos ha demostrado ser más que un proveedor; es un aliado estratégico en tecnología. La empresa está respaldada por asesoría personalizada, calidad en el trabajo y respuestas rápidas y oportunas a cada requerimiento.",
+        "Tecmasoft nos ha demostrado ser más que un proveedor; es un aliado estratégico en tecnología. La empresa está respaldada por asesoría personalizada, calidad en el trabajo y respuestas rápidas y oportunas a cada requerimiento.",
       nombre: "Dante Bazán",
       cargo: "Gerente TI - Mixercon",
       image: "/testimonios/d-bazan.jpg"

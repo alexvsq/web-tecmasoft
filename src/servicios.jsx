@@ -89,7 +89,7 @@ export default function Servicios() {
                         <div>
                         <Boton1
                                 texto='Más Información'
-                                path={"/alamacenamientoredes"}
+                                path={"/almacenamientoredes"}
                             />
                         </div>
 

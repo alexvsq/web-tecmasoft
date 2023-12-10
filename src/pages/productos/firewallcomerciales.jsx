@@ -21,7 +21,7 @@ export default function Firewallcomerciales() {
                     <div className='banner-productos-titulo'>
                         <h2>Firewal Comerciales</h2>
 
-                        <p>En un mundo digital en constante evolución, la seguridad es esencial. Nuestros firewalls comerciales en PERULINUX SAC van más allá de la protección convencional. Con tecnología avanzada y un enfoque proactivo, garantizamos la seguridad de tu red empresarial. Descubre una defensa robusta y confiable que se adapta a los desafíos cibernéticos actuales. En PERULINUX, tu seguridad es nuestra prioridad.</p>
+                        <p>En un mundo digital en constante evolución, la seguridad es esencial. Nuestros firewalls comerciales en Tecmasoft van más allá de la protección convencional. Con tecnología avanzada y un enfoque proactivo, garantizamos la seguridad de tu red empresarial. Descubre una defensa robusta y confiable que se adapta a los desafíos cibernéticos actuales. En Tecmasoft, tu seguridad es nuestra prioridad.</p>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ export default function Firewallcomerciales() {
 
                     <aside className='introducion-video'>
                         <iframe
-                            src="https://www.youtube.com/embed/ygMB1z12Od8?si=i1DO_DHlMcpUNLpT"
+                            src="https://www.youtube-nocookie.com/embed/ygMB1z12Od8?si=i1DO_DHlMcpUNLpT"
                             title="¿Qué es Firewall?"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -126,7 +126,7 @@ export default function Firewallcomerciales() {
 
                     <aside className='introducion-video'>
                         <iframe
-                            src="https://www.youtube.com/embed/rqJuVJGSef4?si=ct23f6HZRjuXmfHu"
+                            src="https://www.youtube-nocookie.com/embed/rqJuVJGSef4?si=ct23f6HZRjuXmfHu"
                             title="¿Qué es Firewall?"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

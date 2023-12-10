@@ -37,6 +37,7 @@
 .titulo-servicios p {
     font-size: 14px;
     max-width: 25ch;
+    min-height: 84px;
 }
 
 .card-servicio {

@@ -1,11 +1,15 @@
-import React from "react";
-import "./servicios-cloud.css";
+import {React, useState} from "react";
 
+import "./servicios-cloud.css";
+import Tarjeta from "./components/tarjeta";
 
 export default function ServiciosCloud() {
+
+    const [show, setShow] = useState(false);
+
   return (
     <>
-
+        <Tarjeta />
 
       <div className="contenedor-cloud">
         <section className="container">
@@ -79,6 +83,8 @@ export default function ServiciosCloud() {
                 <p>Videoconferencia JITSI</p>
               </article>
               </a>
+
+      
           </section>
         </section>
       </div>

@@ -27,7 +27,7 @@ export default function Gestionempresarial() {
           <aside className='introducion-video'>
 
             <iframe
-              src="https://www.youtube.com/embed/irPFqIXpFtw"
+              src="https://www.youtube-nocookie.com/embed/irPFqIXpFtw"
               title="¿Qué es Firewall?"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -133,7 +133,7 @@ export default function Gestionempresarial() {
           <aside className='introducion-video'>
 
             <iframe
-              src="https://www.youtube.com/embed/ltnVCLKTCns"
+              src="https://www.youtube-nocookie.com/embed/ltnVCLKTCns"
               title="¿Qué es Firewall?"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
