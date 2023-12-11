@@ -30,6 +30,13 @@
     font-weight: 500;
 }
 
+
+.textos-header-subtitulo {
+    font-size: 24px;
+    color: var(--verde);
+    font-weight: 500;
+}
+
 .textos-header p {
     font-size: 15px;
     color: white;
