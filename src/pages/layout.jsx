@@ -1,11 +1,12 @@
 import { React, useEffect, useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
 import Home from './home.jsx';
 import Nav from '../nav.jsx';
 import Footer from "../footer.jsx";
+
 import ScrollToTop from '../components/ScrollToTop.jsx';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
+
 import SeguridadTecnologica from './seguridadtecnologica.jsx';
 import Gestionempresarial from './gestionempresarial.jsx';
 import Almacenamientoredes from './almacenamientoredes.jsx';
@@ -17,7 +18,6 @@ import Telefoniaip from './productos/telefoniaip.jsx';
 
 export default function Layout() {
   const location = useLocation();
-  const navigate = useNavigate();
 
   const [changeCount, setChangeCount] = useState(0);
 
@@ -25,19 +25,17 @@ export default function Layout() {
     // Incrementa el contador cada vez que cambia la ubicación
     setChangeCount((prevCount) => prevCount + 1);
     console.log(changeCount);
-
-    // Verifica si se han realizado 15 cambios y si la ruta es '/'
+    // Verifica si se han realizado 15 cambios y refresca la página
     if (changeCount >= 15 && location.pathname === '/') {
-      // Recarga la página después de 15 cambios y en la ruta '/'
       window.location.reload();
     }
-  }, [location.pathname, changeCount]); // Observa cambios en la ruta y en el contador
+  }, [location.pathname]); // / Solo observa cambios en la ruta 
 
   return (
     <>
       <Nav />
       <AnimatePresence>
-        <Routes location={location}>
+        <Routes location={location} key={ Date.now()}>
 
           <Route path='/' element={<Home />} />
           <Route path='/seguridadtecnologica' element={<SeguridadTecnologica />} />
