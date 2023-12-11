@@ -27,7 +27,7 @@ export default function Nav() {
                     <ul className='lista-nav'>
                         <li>  <NavLinkComponent
                             to={isHome ? "nosotros" : "/#nosotros"}
-                            smooth={true}
+                            smooth= "true"
                             duration={300}
                         >Nosotros</NavLinkComponent></li>
                         <li><a href="">Contacto</a>  </li>
@@ -56,7 +56,7 @@ export default function Nav() {
                 <ul className='lista-nav2'>
                     <li onClick={() => setShowMenu(!showMenu)}>  <NavLinkComponent
                         to={isHome ? "nosotros" : "/#nosotros"}
-                        smooth={true}
+                        smooth= "true"
                         duration={500}
                     >Nosotros</NavLinkComponent>
                     </li>

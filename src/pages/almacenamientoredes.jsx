@@ -11,10 +11,6 @@ export default function Alamacenamientoredes() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-
-      <ScrollToTop />
-
-
       <ScrollToTop />
 
       <section style={{ paddingTop: "100px" }} className='container'>

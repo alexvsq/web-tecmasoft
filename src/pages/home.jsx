@@ -21,7 +21,6 @@ export default function Home() {
     if (hash && hash === '#nosotros') {
       // Realizar un scroll suave hacia la sección "Nosotros"
       scroller.scrollTo('nosotros', {
-        smooth: true,
         duration: 500, // Ajustar según preferencias
         offset: -50, // Puedes ajustar un desplazamiento adicional si es necesario
       });

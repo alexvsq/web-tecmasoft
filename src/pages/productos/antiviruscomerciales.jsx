@@ -5,6 +5,8 @@ import "./antiviruscomerciales.css"
 import { motion } from "framer-motion"
 import ScrollToTop from '../../components/ScrollToTop';
 
+import TextoEfecto from '../../components/TextoEfecto';
+
 export default function Antiviruscomerciales() {
   return (
     <motion.div
@@ -39,7 +41,8 @@ export default function Antiviruscomerciales() {
           <div className='productos-introducion-titulo'>
 
             <h2> SOPHOS INTERCEPT X Endpoint </h2>
-            <p> La mejor protección para endpoints del mundo </p>
+            <TextoEfecto text="  La mejor protección para endpoints del mundo  " />
+  
 
           </div>
 
@@ -111,7 +114,7 @@ export default function Antiviruscomerciales() {
           <div className='productos-introducion-titulo'>
 
             <h2> KASPERSKY </h2>
-            <p> Seguridad empresarial capaz de afrontar cualquier desafío </p>
+            <TextoEfecto text="  Seguridad empresarial capaz de afrontar cualquier desafío  " />
 
           </div>
 

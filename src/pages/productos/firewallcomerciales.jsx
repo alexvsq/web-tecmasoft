@@ -5,6 +5,7 @@ import './firewallcomerciales.css'
 import { motion } from "framer-motion"
 
 import ScrollToTop from '../../components/ScrollToTop';
+import TextoEfecto from '../../components/TextoEfecto';
 
 export default function Firewallcomerciales() {
     return (
@@ -40,7 +41,8 @@ export default function Firewallcomerciales() {
                     <div className='productos-introducion-titulo'>
 
                         <h2>UTM SOPHOS XGS</h2>
-                        <p> Dispositivos de firewall next-gen </p>
+                        <TextoEfecto text="  Dispositivos de firewall next-gen  " />
+                        
 
                     </div>
 
@@ -120,7 +122,8 @@ export default function Firewallcomerciales() {
                     <div className='productos-introducion-titulo'>
 
                         <h2>UTM FORTINET</h2>
-                        <p> Los FortiGate NGFW protegen cualquier borde, a cualquier escala. </p>
+                        <TextoEfecto text="   Los FortiGate NGFW protegen cualquier borde, a cualquier escala.   " />
+                     
 
                     </div>
 

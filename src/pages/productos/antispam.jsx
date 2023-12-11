@@ -5,6 +5,8 @@ import './antispam.css'
 import { motion } from "framer-motion"
 import ScrollToTop from '../../components/ScrollToTop';
 
+import TextoEfecto from '../../components/TextoEfecto';
+
 export default function Antispam() {
     return (
         <motion.div
@@ -39,7 +41,8 @@ export default function Antispam() {
                     <div className='productos-introducion-titulo'>
 
                         <h2> Sophos Email </h2>
-                        <p> Seguridad predictiva del correo electrónico en la nube con inteligencia artificial </p>
+                        <TextoEfecto text="  Seguridad predictiva del correo electrónico en la nube con inteligencia artificial  " />
+                  
 
                     </div>
 
@@ -106,7 +109,9 @@ export default function Antispam() {
                     <div className='productos-introducion-titulo'>
 
                         <h2> The MagicSpam </h2>
-                        <p> MagicSpam es un potente software antispam que se instala directamente en el servidor de correo o panel de control. </p>
+
+                        <TextoEfecto text="  MagicSpam es un potente software antispam que se instala directamente en el servidor de correo o panel de control.  " />
+                 
 
                     </div>
 

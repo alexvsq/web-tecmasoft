@@ -14,7 +14,7 @@ export default function Servicios() {
                 <section className='titulo-servicios'>
 
                     <h2>Nuestros <br /> <span>Servicios</span></h2>
-                    <p> <TextoEfecto text=" Nuestros servicios especializados impulsan tu empresa con soluciones a medida. Con un enfoque personalizado, llevamos tu infraestructura al siguiente nivel." /></p>
+                  <TextoEfecto text=" Nuestros servicios especializados impulsan tu empresa con soluciones a medida. Con un enfoque personalizado, llevamos tu infraestructura al siguiente nivel." />
 
                 </section>
             </div>

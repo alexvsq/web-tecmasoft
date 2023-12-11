@@ -5,6 +5,9 @@ import ScrollToTop from '../components/ScrollToTop';
 
 import { motion } from "framer-motion"
 
+import "../components/TextoEfecto.jsx"
+import TextoEfecto from '../components/TextoEfecto.jsx';
+
 export default function SeguridadTecnologica() {
   return (
     <motion.div
@@ -19,15 +22,18 @@ export default function SeguridadTecnologica() {
         <div className='seguridad-tecnologica-introducion'>
           <div className='titulo-pages'>
 
-            <h2>Seguridad <br /> <span>Perimetral</span></h2>
+            <h2> Seguridad <br /> <span>Perimetral</span></h2>
+
             <p> La evolución de la tecnología y la constante demanda de seguridad han permitido que los sistemas de seguridad perimetral en redes evolucionen para ofrecer una mayor confiabilidad a los usuarios sobre la transparencia y protección de su información para el acceso de diferentes servicios. Hoy en día existen muchas personas que usan sus conocimientos y ética profesional de una forma incorrecta al ingresar a redes informáticas restringidas ocasionado pérdidas multimillonarias alrededor del mundo.
               La seguridad perimetral de una empresa es primordial. Los ataques por red y pérdidas de información ocasionan un gran trastorno y no solo la imagen si no también el funcionamiento y progreso de una empresa se ven afectados. Una plataforma robusta para el control de accesos y protección de los servicios informáticos garantiza un correcto aprovechamiento de la infraestructura y garantiza la integridad y confidencialidad de la información.</p>
 
           </div>
-{/*  www.youtube-nocookie.com/embed/ */}
+
+          {/*  www.youtube-nocookie.com/embed/ */}
+
           <aside className='introducion-video'>
             <iframe
-            key='gasdasdc'
+              key='gasdasdc'
               src="https://www.youtube-nocookie.com/embed/mcTCrTneeco"
               title="¿Qué es Firewall?"
               frameBorder="0"
@@ -241,7 +247,7 @@ export default function SeguridadTecnologica() {
         </div>
       </section>
 
-      
+
 
     </motion.div>
   )

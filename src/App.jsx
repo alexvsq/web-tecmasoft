@@ -1,6 +1,5 @@
 import './App.css'
 import Layout from './pages/layout'
-import { Outlet } from 'react-router'
 
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
 
       <Layout />
 
-      <Outlet />
     </>
   )
 }

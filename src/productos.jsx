@@ -96,7 +96,7 @@ export default function Productos() {
                 </section>
 
                 <aside className='flex-grid-productos-cards'>
-                    <a href="#">
+        
                         <article className='card-producto2'>
                             <img className='card-producto2-icon' src="/productos/redhat-icon.svg" alt="redhat" />
 
@@ -105,9 +105,9 @@ export default function Productos() {
                             <img src="/productos/producto-arrow-right.svg" alt="producto-arrow-right" />
 
                         </article>
-                    </a>
+           
 
-                    <a href="#">
+           
                         <article className='card-producto2'>
                             <img className='card-producto2-icon' src="/productos/linux-icon.svg" alt="redhat" />
 
@@ -116,9 +116,9 @@ export default function Productos() {
                             <img src="/productos/producto-arrow-right.svg" alt="producto-arrow-right" />
 
                         </article>
-                    </a>
+             
 
-                    <a href="#">
+          
                         <article className='card-producto2'>
                             <img className='card-producto2-icon' src="/productos/servidores-cloud-icon.svg" alt="redhat" />
 
@@ -127,9 +127,8 @@ export default function Productos() {
                             <img src="/productos/producto-arrow-right.svg" alt="producto-arrow-right" />
 
                         </article>
-                    </a>
+                
 
-                    <a href="#">
                         <article className='card-producto2'>
                             <img className='card-producto2-icon' src="/productos/storage-icon.svg" alt="redhat" />
 
@@ -138,9 +137,9 @@ export default function Productos() {
                             <img src="/productos/producto-arrow-right.svg" alt="producto-arrow-right" />
 
                         </article>
-                    </a>
+                 
 
-                    <a href="#">
+
                         <article className='card-producto2'>
                             <img className='card-producto2-icon' src="/productos/certificados-icon.svg" alt="redhat" />
 
@@ -149,9 +148,9 @@ export default function Productos() {
                             <img src="/productos/producto-arrow-right.svg" alt="producto-arrow-right" />
 
                         </article>
-                    </a>
+                    
 
-                    <a href="#">
+
                         <article className='card-producto2'>
                             <img className='card-producto2-icon' src="/productos/zextras-icon.svg" alt="redhat" />
 
@@ -160,7 +159,8 @@ export default function Productos() {
                             <img src="/productos/producto-arrow-right.svg" alt="producto-arrow-right" />
 
                         </article>
-                    </a>
+                
+                
                 </aside>
 
             </div>

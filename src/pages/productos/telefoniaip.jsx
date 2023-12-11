@@ -5,6 +5,8 @@ import ScrollToTop from '../../components/ScrollToTop';
 
 import "./telefoniaip.css"
 
+import TextoEfecto from '../../components/TextoEfecto';
+
 export default function Telefoniaip() {
     return (
         <motion.div
@@ -35,7 +37,9 @@ export default function Telefoniaip() {
 
             <section className='container'>
 
-                <div className='subtitulo-pages'>Centrales Telefonicas</div>
+                <div className='subtitulo-pages'>
+                <TextoEfecto text="  Centrales Telefonicas  " />
+                    </div>
                 <div className='telefonias-grid'>
 
                     <article className='card-telefonia'>
@@ -69,7 +73,9 @@ export default function Telefoniaip() {
 
 
                 
-                <div className='subtitulo-pages'>TELEFONOS IPS</div>
+                <div className='subtitulo-pages'>
+                <TextoEfecto text=" TELEFONOS IPS " />
+                    </div>
                 <div className='telefonias-grid'>
 
                     <article className='card-telefonia'>
@@ -103,7 +109,9 @@ export default function Telefoniaip() {
 
 
                 
-                <div className='subtitulo-pages'>GATEWAY ANALOGICOS Y PRIMARIOS</div>
+                <div className='subtitulo-pages'>
+                <TextoEfecto text="  GATEWAY ANALOGICOS Y PRIMARIOS " />
+                  </div>
                 <div className='telefonias-grid'>
 
                     <article className='card-telefonia'>
@@ -137,7 +145,9 @@ export default function Telefoniaip() {
 
 
 
-                <div className='subtitulo-pages'>Modulos para PBX</div>
+                <div className='subtitulo-pages'>
+                <TextoEfecto text="  Modulos para PBX " />
+                  </div>
                 <div className='telefonias-grid'>
 
                     <article className='card-telefonia'>

@@ -26,16 +26,16 @@ export default function Layout() {
     setChangeCount((prevCount) => prevCount + 1);
     console.log(changeCount);
     // Verifica si se han realizado 15 cambios y refresca la página
-    if (changeCount >= 55) {
+    if (changeCount >= 15) {
       window.location.reload();
     }
-  }, [location.pathname]); // / Solo observa cambios en la ruta
+  }, [location.pathname]); // / Solo observa cambios en la ruta 
 
   return (
     <>
       <Nav />
       <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
+        <Routes location={location} key={ Date.now()}>
 
           <Route path='/' element={<Home />} />
           <Route path='/seguridadtecnologica' element={<SeguridadTecnologica />} />
@@ -46,11 +46,11 @@ export default function Layout() {
           <Route path='/firewallcomerciales' element={<Firewallcomerciales />} />
           <Route path='/antispam' element={<Antispam />} />
           <Route path='/telefoniaip' element={<Telefoniaip />} />
-
+ 
         </Routes>
       </AnimatePresence>
       <Footer />
-      <Outlet />
+
     </>
   );
 }

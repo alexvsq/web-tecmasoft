@@ -81,7 +81,7 @@ export default function BannerServicios() {
     return (
         <main className='banner-servicios'>
             <motion.article
-                key={currentInfoIndex}
+                key={`banner-servicio-${currentInfoIndex}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -96,7 +96,7 @@ export default function BannerServicios() {
             <aside className='banner-servicios-textos-caja'>
                 <div className='banner-servicios-textos'>
                     <motion.p
-                        key={currentInfoIndex}
+                        key={`banner-servicios-textos${currentInfoIndex}`}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
