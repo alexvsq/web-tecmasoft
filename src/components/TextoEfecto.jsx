@@ -36,7 +36,7 @@ const TextoEfecto = ({ text }) => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isVisible, text, uniqueId]);
+  }, [isVisible, text, uniqueId]);  
 
   return (
     <p id={uniqueId}>
