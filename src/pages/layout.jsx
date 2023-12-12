@@ -25,8 +25,8 @@ export default function Layout() {
     // Incrementa el contador cada vez que cambia la ubicación
     setChangeCount((prevCount) => prevCount + 1);
     console.log(changeCount);
-    // Verifica si se han realizado 15 cambios y refresca la página
-    if (changeCount >= 15 && location.pathname === '/') {
+    // Verifica si se han realizado 13 cambios y refresca la página
+    if (changeCount >= 13 && location.pathname === '/') {
       window.location.reload();
     }
   }, [location.pathname]); // / Solo observa cambios en la ruta 
