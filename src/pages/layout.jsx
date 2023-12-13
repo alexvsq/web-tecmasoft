@@ -18,7 +18,7 @@ import Telefoniaip from './productos/telefoniaip.jsx';
 
 export default function Layout() {
   const location = useLocation();
-
+/* 
   const [changeCount, setChangeCount] = useState(0);
 
   useEffect(() => {
@@ -30,12 +30,12 @@ export default function Layout() {
       window.location.reload();
     }
   }, [location.pathname]); // / Solo observa cambios en la ruta 
-
+ */
   return (
     <>
       <Nav />
       <AnimatePresence>
-        <Routes location={location} key={ Date.now()}>
+        <Routes location={location} /* key={Date.now()} */>
 
           <Route path='/' element={<Home />} />
           <Route path='/seguridadtecnologica' element={<SeguridadTecnologica />} />

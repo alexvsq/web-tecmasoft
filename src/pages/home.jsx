@@ -9,6 +9,7 @@ import ServiciosCloud from '../servicios-cloud.jsx';
 import Testimonios from '../testimonios.jsx';
 import Nosotros from '../nosotros.jsx';
 import { useLocation } from 'react-router-dom';
+import { motion } from "framer-motion"
 
 export default function Home() {
   const location = useLocation();
@@ -28,7 +29,12 @@ export default function Home() {
   }, [location]);
 
   return (
-    <>
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+  >
+
       <Header />
       <Introduccion />
       <Servicios />
@@ -40,6 +46,6 @@ export default function Home() {
       <Element name="nosotros">
         <Nosotros />
       </Element>
-    </>
+    </motion.div>
   );
 }

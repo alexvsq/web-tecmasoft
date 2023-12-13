@@ -6,7 +6,6 @@ import ScrollToTop from '../components/ScrollToTop';
 import { motion } from "framer-motion"
 
 import "../components/TextoEfecto.jsx"
-import TextoEfecto from '../components/TextoEfecto.jsx';
 
 export default function SeguridadTecnologica() {
   return (
@@ -17,6 +16,8 @@ export default function SeguridadTecnologica() {
     >
 
       <ScrollToTop />
+
+
       <section style={{ paddingTop: "100px" }} className='container'>
 
         <div className='seguridad-tecnologica-introducion'>

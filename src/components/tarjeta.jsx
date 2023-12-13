@@ -7,10 +7,11 @@ export default function Tarjeta({ show, title,subtitle, mainText, subText, listI
     const [mostrar, setMostrar] = useState(true)
 
 
-
+//comprueba el show que recibe y  si es true muestra la tarjeta, si es false la oculta
+//el mostrar es para cuandp se cierra la tarjeta los dos se igualan y depende de eso se muestra o se oculta
     return (
         <div className='tarjeta-backgroud' style={show === mostrar ? { display: "block" } : { display: "none" }}>
-
+                                            
             <div className='tarjeta-contenido'>
 
                 <section style={{ paddingTop: "20px" }} className='container'>
