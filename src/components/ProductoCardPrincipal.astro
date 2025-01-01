@@ -1,0 +1,29 @@
+---
+const { imgSrc, title, texts, linkTo } = Astro.props;
+---
+<a href={linkTo}>
+  <article
+  class="h-[300px]  border border-bordes rounded-3xl px-4 py-6 flex flex-col justify-between items-center hover:bg-bordes transition cursor-pointer shadow-card"
+  >
+  <img loading="lazy"  loading="lazy" class="h-14 object-contain my-2" src={imgSrc} alt={title} />
+  
+  <p class="text-xl max-w-[10ch] text-center">{title}</p>
+  
+  <ul
+  class="flex flex-col gap-2 text-textos list-disc marker:text-verde list-inside"
+  >
+  {
+    texts ?
+    texts
+    .map((text: string) => { 
+      return <li>{text}</li>;
+    })
+    :<></>
+  }
+  </ul>
+  
+  <footer class="w-full flex justify-end">
+    <img loading="lazy"  class="h-6" src="/icons/arrow.png" alt="arrow" />
+  </footer>
+</article>
+</a>

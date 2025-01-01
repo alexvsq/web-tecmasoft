@@ -1,0 +1,173 @@
+---
+const navBtnLinks = [
+  {
+    name: "Nosotros",
+    link: "#nosotros",
+  },
+  {
+    name: "Contacto",
+    link: "#",
+  },
+  {
+    name: "Intranet",
+    link: "#",
+  },
+  {
+    name: "Blog",
+    link: "#",
+  },
+];
+
+const iconsBtn = [
+  {
+    name: "facebook",
+    src: "facebook.png",
+    link: "#",
+  },
+  {
+    name: "youtube",
+    src: "youtube.png",
+    link: "#",
+  },
+  {
+    name: "twitter",
+    src: "twitter.png",
+    link: "#",
+  },
+];
+---
+
+<nav
+  class="fixed z-10 w-full justify-center bg-black/40 backdrop-blur-lg border-b-2 border-bordes"
+>
+  <!-- WEB VIEW -->
+  <section
+    class="hidden md:flex dynamic-container justify-between items-center p-4"
+  >
+  <a href="/">
+    <img loading="lazy"  class="h-6" src="/logo/logo-white.png" alt="logo" />
+  </a>
+    <ul class="flex text-textos gap-10 text-sm">
+      {
+        navBtnLinks.map((itemBtn) => {
+          return (
+            <li class="hover:text-white transition">
+              <a href={itemBtn.link}>{itemBtn.name}</a>
+            </li>
+          );
+        })
+      }
+    </ul>
+    <div class="flex gap-5">
+      {
+        iconsBtn.map((itemIcon) => {
+          return (
+            <a href={itemIcon.link}>
+              <img loading="lazy" 
+                class="h-7"
+                src={`/icons/${itemIcon.src}`}
+                alt={itemIcon.name}
+              />
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <!-- MOBILE VIEW -->
+
+  <section class="md:hidden flex items-center p-2">
+    <div class="flex flex-1"></div>
+    <a href="/">
+      <img loading="lazy"  class="h-6" src="/logo/logo-white.png" alt="logo" />
+    </a>
+
+    <div class="flex flex-1 justify-end">
+      <img loading="lazy" 
+        id="btn-menu-nav"
+        class="w-10 cursor-pointer"
+        src="/icons/menu-nav.png"
+        alt="menu-nav"
+      />
+    </div>
+  </section>
+</nav>
+
+<section
+  id="menu-mobile"
+  class="fixed z-20 inset-0 bg-black/40 backdrop-blur-lg md:hidden flex flex-col justify-around  disabled"
+>
+  <header class="flex justify-end p-4">
+    <img loading="lazy" 
+      id="btn-menu-close"
+      class="w-10 cursor-pointer"
+      src="/icons/menu-close.png"
+      alt="menu-nav-close"
+    />
+  </header>
+
+  <div class="flex flex-col justify-center  items-center gap-4">
+    {
+      navBtnLinks.map((item, index) => {
+        const lengthNavs = navBtnLinks.length;
+
+        return (
+            <a href={item.link}>{item.name}</a>
+            <div>
+              {
+                lengthNavs -1 !== index 
+                ? <div class=" w-[200px] bg-verde h-[2px]" ></div>
+                : null
+              }
+            </div>
+          
+        );
+      })
+    }
+  </div>
+
+  <footer>
+    <div class=" flex justify-center items-center gap-10  py-10">
+      {
+        iconsBtn.map((itemIcon,index)=>{
+          return (
+            <a href={itemIcon.link}>
+              <img loading="lazy" 
+                class="h-8"
+                src={`/icons/${itemIcon.src}`}
+                alt={itemIcon.name}
+                />
+            </a>
+          );
+        })
+      }
+      </div>
+  </footer>
+</section>
+
+<script>
+
+document.addEventListener('astro:page-load', () => { 
+
+  const btnMenuNav = document.getElementById("btn-menu-nav");
+  const btnMenuClose = document.getElementById("btn-menu-close");
+  const menuMobile = document.getElementById("menu-mobile");
+
+  btnMenuNav?.addEventListener("click", () => {
+    menuMobile?.classList.toggle("disabled");
+    console.log('click open');
+    
+  });
+  btnMenuClose?.addEventListener("click", () => {
+    menuMobile?.classList.toggle("disabled");
+    console.log('click close');
+  });
+}, { once: false });
+</script>
+
+<style>
+  .disabled {
+    display: none;
+  }
+</style>

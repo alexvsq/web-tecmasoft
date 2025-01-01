@@ -1,0 +1,190 @@
+<section>
+  <div
+    class="flex flex-col md:flex-row justify-center md:h-72 dynamic-container"
+  >
+    <div class="relative w-full md:w-1/2 h-full min-h-[200px] bg-verde">
+      <img
+        loading="lazy"
+        id="img-slider"
+        class="h-full w-full object-cover min-h-[200px]"
+        src="/slider-servicios/datacenter.jpeg"
+        alt="datacenter"
+      />
+      <div class="absolute bottom-2 left-5">
+        <p id="title-slider" class="text-3xl">Datacenter</p>
+        <p id="title-slider-strong" class="text-3xl text-verde font-bold">
+          Cloud
+        </p>
+      </div>
+    </div>
+
+    <aside
+      class="md:w-1/2 h-full flex flex-col gap-4 justify-center items-center py-10 md:py-0"
+    >
+      <header class="font-semibold">
+        <p id="text-description" class="max-w-[45ch]">
+          Migra tus Servidores Fisicos a la nube te ofrecemos tráfico ilimitado,
+          firewall y protección DDoS
+        </p>
+        <p id="text-description-strong" class="text-verde">
+          Tu negocio siempre disponible en la nube
+        </p>
+      </header>
+      <footer class="flex justify-around w-full">
+        <a
+          class="text-verde border border-azulClaro rounded-full pt-2 px-4 text-xs font-semibold hover:bg-verde hover:text-black shadow-card"
+          href="#"
+        >
+          Más Información
+        </a>
+        <div class="flex gap-4">
+          <img
+            loading="lazy"
+            id="btn-prev"
+            class="h-8 cursor-pointer"
+            src="/icons/arrow-green.png"
+            alt="btn-prev"
+          />
+          <img
+            loading="lazy"
+            id="btn-next"
+            class="h-8 rotate-180 cursor-pointer"
+            src="/icons/arrow-green.png"
+            alt="btn-next"
+          />
+        </div>
+      </footer>
+    </aside>
+  </div>
+</section>
+
+<script>
+  const infoSlider = [
+    {
+      img: "call-center.webp",
+      titulo: " Central &",
+      tituloStrong: "Call Center Cloud",
+      texto:
+        "Software potente de alto alcance para centro de llamadas alojado en la nube.",
+      textoSpan: "Toda la comunicación que tu empresa necesita en Ia nube",
+    },
+
+    {
+      img: "backupcloud.webp",
+      titulo: " Backup",
+      tituloStrong: "Cloud",
+      texto:
+        "Respalda la información de tu empresa en la nube y asegura la continuidad operacional",
+      textoSpan: "Backup sincronizado para servidores físicos virtuales",
+    },
+
+    {
+      img: "datacenter.jpeg",
+      titulo: " Datacenter",
+      tituloStrong: "Cloud",
+      texto:
+        "Migra tus Servidores Fisicos a la nube te ofrecemos tráfico ilimitado, firewall y protección DDoS",
+      textoSpan: "Tu negocio siempre disponible en la nube",
+    },
+
+    {
+      img: "zabbix.jpg",
+      titulo: "Mejore su rendimiento",
+      tituloStrong: "De monitoreo",
+      texto: "ZABBIX",
+      textoSpan: "Zabbix esta 100% listo para empresas",
+    },
+
+    {
+      img: "ethical.jpg",
+      titulo: "Ethical Hacking",
+      tituloStrong: "Cyber Seguridad",
+      texto: "Protegemos puntos debiles de tu empresa",
+      textoSpan: "El 95% de los ciberataques son Fallos Humanos",
+    },
+
+    {
+      img: "zimbra.webp",
+      titulo: "Zimbra",
+      tituloStrong: "Cloud",
+      texto: "Soluciónes de correo electrónico seguro para tu empresa",
+      textoSpan: "Migra con nosotros y ahorra en soporte",
+    },
+  ];
+
+  document.addEventListener(
+    "astro:page-load",
+    () => {
+      let indexSliderCurrent = 0;
+      let changeSlider = true;
+      const lengthSlider = infoSlider.length;
+
+      const btnPrev = document.getElementById("btn-prev");
+      const btnNext = document.getElementById("btn-next");
+
+      const imgSlider = document.getElementById(
+        "img-slider"
+      ) as HTMLImageElement;
+      const textDescription = document.getElementById(
+        "text-description"
+      ) as HTMLImageElement;
+      const textDescriptionStrong = document.getElementById(
+        "text-description-strong"
+      ) as HTMLImageElement;
+      const titleSlider = document.getElementById(
+        "title-slider"
+      ) as HTMLImageElement;
+      const titleSliderStrong = document.getElementById(
+        "title-slider-strong"
+      ) as HTMLImageElement;
+
+      function setInfoSlider(current: number) {
+        imgSlider.src = `/slider-servicios/${infoSlider[current].img}`;
+        titleSlider.innerHTML = infoSlider[current].titulo;
+        titleSliderStrong.innerHTML = infoSlider[current].tituloStrong;
+        textDescription.innerHTML = infoSlider[current].textoSpan;
+        textDescriptionStrong.innerHTML = infoSlider[current].tituloStrong;
+      }
+
+      btnNext?.addEventListener("mouseover", () => {
+        changeSlider = false;
+      });
+      btnPrev?.addEventListener("mouseover", () => {
+        changeSlider = false;
+      });
+      btnNext?.addEventListener("mouseout", () => {
+        changeSlider = true;
+      });
+      btnPrev?.addEventListener("mouseout", () => {
+        changeSlider = true;
+      });
+
+      btnNext?.addEventListener("click", () => {
+        if (indexSliderCurrent < lengthSlider - 1) {
+          indexSliderCurrent++;
+          setInfoSlider(indexSliderCurrent);
+        } else {
+          indexSliderCurrent = 0;
+          setInfoSlider(indexSliderCurrent);
+        }
+      });
+
+      btnPrev?.addEventListener("click", () => {
+        if (indexSliderCurrent > 0) {
+          indexSliderCurrent--;
+          setInfoSlider(indexSliderCurrent);
+        } else {
+          indexSliderCurrent = lengthSlider - 1;
+          setInfoSlider(indexSliderCurrent);
+        }
+      });
+
+      setInterval(() => {
+        if (changeSlider) {
+          btnNext?.click();
+        }
+      }, 6000);
+    },
+    { once: false }
+  );
+</script>

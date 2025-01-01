@@ -1,0 +1,27 @@
+---
+const { title1, title2, text1, text2, text3, imgSrc, goToLink } = Astro.props;
+---
+
+<article class="m-20 min-w-[200px]">
+  <img loading="lazy" class="h-10 my-5" src={imgSrc} alt="huella" />
+  <div class="my-2">
+    <p class="text-2xl">{title1}</p>
+    <p class="text-2xl font-bold">{title2}</p>
+  </div>
+  <ul
+    class="text-textos flex flex-col gap-2 text-base list-disc marker:text-verde list-inside"
+  >
+    <li>{text1}</li>
+    <li>{text2}</li>
+    <li>{text3}</li>
+  </ul>
+
+  <footer class="py-6">
+    <a
+      class="text-verde border border-azulClaro rounded-full py-1 px-4 text-xs font-semibold hover:bg-verde hover:text-black shadow-card"
+      href={goToLink}
+    >
+      Más Información
+    </a>
+  </footer>
+</article>

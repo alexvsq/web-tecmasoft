@@ -1,0 +1,39 @@
+---
+import PorQueCard from "../components/PorQueCard.astro";
+---
+
+<section class="border-b border-bordes py-8">
+  <div class="py-5 dynamic-container">
+    <h3 class="text-2xl py-4">
+      ¿Por qué elegir <span class="font-semibold">Tecmasoft?</span>
+    </h3>
+
+    <div
+      class="flex flex-col gap-14 md:gap-0 items-center md:items-start md:flex-row justify-between py-4"
+    >
+      <PorQueCard
+        number="01"
+        title="Experiencia y Especialización"
+        text="Con más de 15 años de experiencia, somos líderes en el diseño e implementación de soluciones tecnológicas. Contamos con un equipo altamente calificado y soluciones q estan a la vanguardia de las últimas tendencias."
+      />
+      <PorQueCard
+        number="02"
+        title="Compromiso con el Cliente"
+        text="Trabajamos mano a mano contigo, brindando atención dedicada y apoyo integral. Estamos comprometidos a asegurar que cada cliente alcance sus objetivos tecnológicos de manera eficaz y satisfactoria."
+      />
+      <PorQueCard
+        number="03"
+        title="Enfoque Personalizado"
+        text="Reconocemos la singularidad de cada empresa y adaptamos nuestras soluciones para satisfacer sus necesidades específicas. Nos esforzamos por entender y abordar tus desafíos"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-image: url("/bg/bg-hero.svg"),
+      radial-gradient(at center top, rgba(8, 33, 64, 0.3), rgba(3, 8, 12, 0.3));
+    background-size: cover;
+  }
+</style>

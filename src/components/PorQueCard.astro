@@ -1,0 +1,15 @@
+---
+const { number, title, text } = Astro.props;
+---
+
+<article class="flex flex-col items-center md:items-start gap-3">
+  <div
+    class="p-1 bg-verde rounded-full w-9 aspect-square flex justify-center items-center"
+  >
+    <p class="text-black font-semibold">{number}</p>
+  </div>
+  <p class="text-lg font-semibold">{title}</p>
+  <p class="text-textos text-sm max-w-[50ch]">
+    {text}
+  </p>
+</article>

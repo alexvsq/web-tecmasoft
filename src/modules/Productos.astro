@@ -1,0 +1,97 @@
+---
+import ProductoCardPrincipal from "../components/ProductoCardPrincipal.astro";
+import ProductoCardSecondary from "../components/ProductoCardSecondary.astro";
+---
+
+<section class="dynamic-container">
+  <header class="flex flex-col justify-between items-center my-20">
+    <h3 class="text-3xl font-bold">Nuestros Productos</h3>
+    <div class="w-[200px] h-[2px] bg-verde my-2"></div>
+  </header>
+
+  <section class="productos-grid items-center">
+    <ProductoCardPrincipal
+      imgSrc="/icons/productos/firewall.png"
+      title="Firewall Comerciales"
+      texts={["UTM Sophos XG", "UTM Fortinet", "FortiMail"]}
+      linkTo="/productos/firewall-comerciales"
+    />
+    <ProductoCardPrincipal
+      imgSrc="/icons/productos/antivirus.png"
+      title="Antivirus Comerciales"
+      texts={["Sophos Antivirus", "Kaspersky"]}
+      linkTo="/productos/antivirus-antirasomware"
+    />
+    <ProductoCardPrincipal
+      imgSrc="/icons/productos/anti-spam.png"
+      title="Antispam Comerciales"
+      texts={["Sophos Mail", "Magic Spam", "FortiMail"]}
+      linkTo="/productos/antispam-comerciales"
+    />
+    <ProductoCardPrincipal
+      imgSrc="/icons/productos/telefonia.png"
+      title="Telefonía Ip"
+      texts={[
+        "Centrales Telefónicas",
+        "Módulos de Telefonía",
+        "Sistema de Borde Controler (SBC)",
+      ]}
+      linkTo="/productos/telefonia-ip"
+    />
+  </section>
+
+  <footer class="py-10 flex flex-col md:flex-row gap-10">
+    <div class="w-full md:w-[400px]">
+      <p class="text-textos text-sm max-w-[30ch]">
+        Descubre soluciones avanzadas que potenciarán el rendimiento de tu
+        empresa, cada producto en nuestra selección está diseñado para impulsar
+        la eficiencia, seguridad y rendimiento de tu empresa. Con tecnología de
+        vanguardia, te ofrecemos las herramientas que necesitas para prosperar
+        en la era digital.
+      </p>
+      <div class="w-[100px] h-[1px] bg-verde my-5"></div>
+    </div>
+    <aside class="flex-grid-productos-cards">
+      <ProductoCardSecondary
+        title="Red Hat"
+        imgSrc="/icons/productos/red-hat.png"
+      />
+      <ProductoCardSecondary
+        title="Suse Linux"
+        imgSrc="/icons/productos/linux.png"
+      />
+      <ProductoCardSecondary
+        title="Servidores Cloud"
+        imgSrc="/icons/productos/servidores-cloud.png"
+      />
+      <ProductoCardSecondary
+        title="Storage"
+        imgSrc="/icons/productos/storage-icon.png"
+      />
+      <ProductoCardSecondary
+        title="Certificados Digitales"
+        imgSrc="/icons/productos/certificados-icon.png"
+      />
+      <ProductoCardSecondary
+        title="Zextras Carbonio"
+        imgSrc="/icons/productos/zextras.png"
+      />
+    </aside>
+  </footer>
+</section>
+
+<style>
+  .productos-grid {
+    height: 100%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .flex-grid-productos-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+  }
+</style>

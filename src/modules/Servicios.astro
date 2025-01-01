@@ -1,0 +1,65 @@
+---
+import ServicioCard from "../components/ServicioCard.astro";
+---
+
+<section class="relative border-t border-b border-bordes">
+  <header class="md:absolute pt-10 md:pt-0 top-10 w-full">
+    <div class="dynamic-container">
+      <p class="text-2xl font-semibold">Nuestros</p>
+      <p class="text-4xl text-verde font-bold">Servicios</p>
+
+      <p class="md:max-w-[25ch] text-sm text-textos my-2">
+        Nuestros servicios especializados impulsan tu empresa con soluciones a
+        medida. Con un enfoque personalizado, llevamos tu infraestructura al
+        siguiente nivel.
+      </p>
+    </div>
+  </header>
+
+  <section class="flex flex-col md:flex-row">
+    <div
+      class="w-full md:w-[55%] flex flex-col items-end border-r border-bordes"
+    >
+      <ServicioCard
+        title1="Seguridad"
+        title2="Tecnológica"
+        text1="Seguridad perimetral"
+        text2="Ethical Hacking"
+        text3="Ciberseguridad"
+        imgSrc="/icons/servicios/huella.png"
+        goToLink="/servicios/seguridad-tecnologica"
+      />
+      <div class="w-full h-[1px] bg-bordes"></div>
+      <ServicioCard
+        title1="Gestión"
+        title2="Empresarial"
+        text1="Sistema de Ticket"
+        text2="Inventario"
+        text3="Alfresco"
+        imgSrc="/icons/servicios/gestion-empresarial.png"
+        goToLink="/servicios/gestion-empresarial"
+      />
+    </div>
+    <div class="w-full md:w-[45%] flex flex-col">
+      <ServicioCard
+        title1="Almacenamiento y"
+        title2="Redes"
+        text1="Storage TrueNAS"
+        text2="Configuración de Switches"
+        text3="Soporte de Servidores"
+        imgSrc="/icons/servicios/almacenamiento-redes.png"
+        goToLink="/servicios/almacenamineto-redes"
+      />
+      <div class="w-full h-[1px] bg-bordes"></div>
+      <ServicioCard
+        title1="Infraestructura"
+        title2="Tecnológica"
+        text1="Virtualización & Backup"
+        text2="Soporte de Servidores"
+        text3="Cableado Estructurado"
+        imgSrc="/icons/servicios/infraestructura-tecnologica.png"
+        goToLink="/servicios/infraestructura-tecnologica"
+      />
+    </div>
+  </section>
+</section>
