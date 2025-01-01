@@ -4,5 +4,85 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout>
   <div class="h-[60px] w-full"></div>
-  hola soy la infraestructura tecnologica
+  <div class="dynamic-container md:pt-10">
+    <section
+      class="flex flex-col md:flex-row w-full justify-between gap-10 py-10"
+    >
+      <article class="md:w-1/2">
+        <header>
+          <p class="text-3xl">Virtualización &</p>
+          <p class="text-4xl text-verde font-bold">Backup</p>
+        </header>
+        <div class="text-sm text-textos py-4 max-w-[55ch]">
+          <p>
+            La virtualización es una solución de automatizar los recursos de
+            hardware, los departamentos TIC que ya han virtualizado sus
+            servidores de forma básica, ahora suben de nivel ampliando la
+            virtualización a sus aplicaciones más críticas.
+          </p>
+        </div>
+      </article>
+
+      <aside class="md:w-1/2">
+        <lite-youtube
+          class="rounded-xl"
+          videoid="mgSjaS8yXFA"
+          playlabel="Play: Keynote (Google I/O '18)"
+        >
+        </lite-youtube>
+      </aside>
+    </section>
+
+    <section class="flex flex-col md:flex-row gap-10 py-5">
+      <div class="flex flex-col gap-4 md:w-1/2">
+        <h3 class="text-xl text-verde font-bold max-w-[40ch]">
+          La tendencia a la virtualización continúa. El motivo es que las
+          ventajas estratégicas son notables y responden a las necesidades de
+          las organizaciones:
+        </h3>
+
+        <ul
+          class="flex flex-col gap-2 list-disc marker:text-verde list-inside text-sm max-w-[55ch]"
+        >
+          <li>
+            Permite alinear la implementación de capacidad y recursos TIC con el
+            crecimiento y expansión del negocio, porque resuelve el problema de
+            expansión del servidor físico al mismo tiempo que recorta los gastos
+            de capital que conlleva la compra y mantenimiento de nuevas
+            máquinas.
+          </li>
+          <li>
+            Mejora la calidad del servicio porque aumenta el rendimiento y el
+            tiempo de funcionamiento de su infraestructura agilizando,
+            flexibilizando y simplificando los procesos.
+          </li>
+          <li>
+            Instalación y configuración de elementos red que sean necesarios
+          </li>
+          <li>
+            Permite implementar soluciones de alta disponibilidad a nivel de
+            servidores y equipos de conexión de telecomunicaciones, lo que
+            redunda en una mayor disponibilidad y fiabilidad de los servicios.
+          </li>
+        </ul>
+      </div>
+      <aside class="flex flex-col gap-4 md:w-1/2">
+        <h3 class="text-xl text-verde font-bold">Transformación Digital</h3>
+        <p class="text-textos text-sm">
+          Las empresas actualmente experimentan procesos de transformación
+          digital, en el que la implementación de tecnologías de cómputo es cada
+          vez más importante para asegurar su activo más valioso: la
+          información. Por este motivo, contar con un backup o copia de
+          seguridad, es una de las tecnologías primordiales que toda
+          organización que almacena datos propios, como de clientes y
+          proveedores, requiere implementar. Hacer Backup de la Información en
+          una ventana de tiempo reducido y con la retención que el cliente
+          necesita es un componente esencial en cualquier estrategia de
+          protección de datos. La copia de seguridad de los datos críticos de la
+          organización garantiza que la empresa o institución siempre esté en
+          funcionamiento, independientemente de lo que ocurra.
+        </p>
+      </aside>
+    </section>
+  </div>
 </Layout>

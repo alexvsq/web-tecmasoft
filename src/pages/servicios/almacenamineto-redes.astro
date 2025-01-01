@@ -4,5 +4,81 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout>
   <div class="h-[60px] w-full"></div>
-  hola soy almacenamiento y redes
+
+  <div class="dynamic-container md:pt-10">
+    <section
+      class="flex flex-col md:flex-row w-full justify-between gap-10 py-10"
+    >
+      <article class="md:w-1/2">
+        <header>
+          <p class="text-3xl">Storage</p>
+          <p class="text-4xl text-verde font-bold">TrueNAS</p>
+        </header>
+        <div class="text-sm text-textos py-4 max-w-[55ch]">
+          <p>
+            TrueNAS es un sistema operativo basado en FreeBSD que proporciona
+            servicios de almacenamiento en red. Permite convertir una
+            computadora personal en un soporte de almacenamiento accesible desde
+            red, por ejemplo para almacenamientos masivos de información,
+            música, backups, etc.
+          </p>
+        </div>
+      </article>
+
+      <aside class="md:w-1/2">
+        <lite-youtube
+          class="rounded-xl"
+          videoid="XNSN9IqchfQ"
+          playlabel="Play: Keynote (Google I/O '18)"
+        >
+        </lite-youtube>
+      </aside>
+    </section>
+
+    <section class="flex flex-col md:flex-row gap-10 py-5">
+      <div class="flex flex-col gap-4 md:w-1/2">
+        <h3 class="text-xl text-verde font-bold max-w-[40ch]">
+          ¿Qué ventajas ofrece TrueNAS en comparación con otros sistemas
+          operativos similares?
+        </h3>
+
+        <p class="text-textos text-sm max-w-[55ch]">
+          TrueNAS ofrece varias ventajas en comparación con otros sistemas
+          operativos similares. En primer lugar, TrueNAS es un sistema operativo
+          de almacenamiento diseñado específicamente para entornos empresariales
+          y de alto rendimiento. Esto significa que está optimizado para ofrecer
+          una gran capacidad de almacenamiento, alta disponibilidad y
+          rendimiento rápido. Además, TrueNAS cuenta con una interfaz de usuario
+          intuitiva y fácil de usar, lo que facilita la administración del
+          sistema y la configuración del almacenamiento. También ofrece una
+          amplia gama de características avanzadas, como compresión y
+          deduplicación de datos, replicación remota y cifrado integrado.
+        </p>
+      </div>
+      <aside class="flex flex-col gap-4 md:w-1/2">
+        <h3 class="text-xl text-verde font-bold">
+          Principales características
+        </h3>
+        <p class="text-textos text-sm">
+          Por su poco requerimiento de almacenamiento, puede ser instalado en un
+          dispositivo de memoria extraíble como Compact Flash, Memorias USB o
+          disco duro.
+        </p>
+        <ul
+          class="flex flex-col gap-2 list-disc marker:text-verde list-inside text-sm max-w-[55ch]"
+        >
+          <li>Fácil instalación.</li>
+          <li>
+            Fácil administración remota, mediante páginas web accesibles desde
+            cualquier computadora en red con un navegador.
+          </li>
+          <li>
+            No es necesario tener conectado monitor ni teclado para su
+            operación.
+          </li>
+          <li>RAID Hardware y Software</li>
+        </ul>
+      </aside>
+    </section>
+  </div>
 </Layout>
