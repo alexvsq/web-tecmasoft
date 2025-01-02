@@ -1,8 +1,141 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import TelefoniaCard from "../../components/TelefoniaCard.astro";
 ---
 
 <Layout>
   <div class="h-[60px] w-full"></div>
-  hola soy telefonia ip
+
+  <header class="header-bg">
+    <section class="dynamic-container py-10">
+      <div class="text-verde text-3xl font-bold py-2">
+        <p>Telefonia IP</p>
+      </div>
+      <p class="text-sm text-textos max-w-[50ch]">
+        En Tecmasoft, llevamos la comunicación empresarial al siguiente nivel
+        con nuestra oferta de telefonía IP. Moderniza y simplifica tu
+        infraestructura de comunicaciones, eliminando fronteras físicas y
+        mejorando la eficiencia. Descubre la flexibilidad y la calidad de audio
+        excepcional que ofrecemos para potenciar la conectividad de tu empresa.
+        En PERULINUX, transformamos cómo te comunicas.
+      </p>
+    </section>
+  </header>
+
+  <div class="dynamic-container py-10">
+    <section>
+      <header>
+        <p class="text-verde text-xl font-bold">Centrales Telefonicas</p>
+      </header>
+
+      <div class="grid-articles py-10">
+        <TelefoniaCard
+          title="SERVIDOR DE COMUNICACIONES IP PBX MODELO P550"
+          srcImg="/telefonia/centrales1.jpg"
+        />
+        <TelefoniaCard
+          title="SERVIDOR DE COMUNICACIONES IP PBX MODELO S100"
+          srcImg="/telefonia/centrales2.jpg"
+        />
+        <TelefoniaCard
+          title="SERVIDOR DE COMUNICACIONES IP PBX MODELO S50"
+          srcImg="/telefonia/centrales3.jpg"
+        />
+        <TelefoniaCard
+          title="SERVIDOR DE COMUNICACIONES IP PBX MODELO S20"
+          srcImg="/telefonia/centrales4.jpg"
+        />
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <p class="text-verde text-xl font-bold">TELEFONOS IPS</p>
+      </header>
+
+      <div class="grid-articles py-10">
+        <TelefoniaCard
+          title="CÁMAR IP FANVIL MODELO CM60"
+          srcImg="/telefonia/ips1.jpg"
+        />
+        <TelefoniaCard
+          title="TELÉFONO IP FANVIL MODELO X1SG"
+          srcImg="/telefonia/ips2.jpg"
+        />
+        <TelefoniaCard
+          title="TELÉFONO IP FANVIL MODELO X3SG"
+          srcImg="/telefonia/ips3.jpg"
+        />
+        <TelefoniaCard
+          title="TELÉFONO IP FANVIL MODELO X3SP LITE"
+          srcImg="/telefonia/ips4.jpg"
+        />
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <p class="text-verde text-xl font-bold">
+          GATEWAY ANALOGICOS Y PRIMARIOS
+        </p>
+      </header>
+
+      <div class="grid-articles py-10">
+        <TelefoniaCard
+          title="GATEWAY ANALÓGICO – TA3200"
+          srcImg="/telefonia/gataway1.jpg"
+        />
+        <TelefoniaCard
+          title="GATEWAY ANALÓGICO – TE810"
+          srcImg="/telefonia/gataway2.jpg"
+        />
+        <TelefoniaCard title="GATEWAY E1" srcImg="/telefonia/gataway3.jpg" />
+        <TelefoniaCard title="GATEWAY E2" srcImg="/telefonia/gataway4.jpg" />
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <p class="text-verde text-xl font-bold">Modulos para PBX</p>
+      </header>
+
+      <div class="grid-articles py-10">
+        <TelefoniaCard
+          title="MODULO DE 1 PUERTOS 4G LTE"
+          srcImg="/telefonia/pbx1.jpg"
+        />
+        <TelefoniaCard
+          title="MODULO DE 1 PUERTOS UMTS"
+          srcImg="/telefonia/pbx2.jpg"
+        />
+        <TelefoniaCard
+          title="MODULO DE 2 PUERTOS FXO"
+          srcImg="/telefonia/pbx3.jpg"
+        />
+        <TelefoniaCard
+          title="MODULO DE 2 PUERTOS FXS"
+          srcImg="/telefonia/pbx4.jpg"
+        />
+      </div>
+    </section>
+  </div>
 </Layout>
+
+<style>
+  .header-bg {
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.5019257703081232) 64%
+      ),
+      url("/bg/productos/telefonia-banner.webp");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .grid-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
+</style>
