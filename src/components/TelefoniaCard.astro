@@ -7,7 +7,7 @@ const { title, srcImg, linkTo } = Astro.props;
     class="border border-bordes rounded-2xl p-3 hover:bg-bordes transition cursor-pointer"
   >
     <header>
-      <img class="rounded-xl" src={srcImg} alt={title} />
+      <img loading="lazy" class="rounded-xl" src={srcImg} alt={title} />
     </header>
     <p class="text-sm py-2">{title}</p>
     <footer class="flex w-full justify-end">

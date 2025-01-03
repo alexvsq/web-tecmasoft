@@ -1,5 +1,6 @@
 ---
-import SolucionesCard from "../components/SolucionesCard.astro";
+import SolucionesCard from "../components/SolucionesCard.jsx";
+import { cardsSoluciones } from "../utils/infoSolucionesCards";
 ---
 
 <section class="border-t border-b border-bordes">
@@ -10,56 +11,11 @@ import SolucionesCard from "../components/SolucionesCard.astro";
     </header>
 
     <aside class="grid-soluciones-cards md:w-[60%]">
-      <SolucionesCard
-        linkTo="#"
-        imgSrc="/icons/soluciones/zimbra.png"
-        title="Zimbra Cloud"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="Inmail Cloud"
-        imgSrc="/icons/soluciones/inmail.png"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="Servidores Vps"
-        imgSrc="/icons/soluciones/vps.png"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="Zabbix Cloud"
-        imgSrc="/icons/soluciones/zabbix.png"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="NextCloud"
-        imgSrc="/icons/soluciones/nxt.png"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="Central PBX Cloud"
-        imgSrc="/icons/soluciones/pbx.png"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="Sistema de Call Center Cloud"
-        imgSrc="/icons/soluciones/call-center.png"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="Proxmox Datacenter"
-        imgSrc="/icons/soluciones/proxmox.png"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="Backup Cloud"
-        imgSrc="/icons/soluciones/backup.png"
-      />
-      <SolucionesCard
-        linkTo="#"
-        title="Videoconferencia Cloud"
-        imgSrc="/icons/soluciones/jitsi.png"
-      />
+      {
+        cardsSoluciones.map((card) => {
+          return <SolucionesCard client:load objCard={card} />;
+        })
+      }
     </aside>
   </div>
 </section>

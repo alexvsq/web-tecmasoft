@@ -20,14 +20,17 @@ import Footer from "../modules/Footer.astro";
     <ClientRouter />
     <title>Tecmasoft</title>
   </head>
+
   <body>
     <Nav />
     <slot />
     <Footer />
   </body>
 </html>
+
 <script src="../../node_modules/lite-youtube-embed/src/lite-yt-embed.js"
 ></script>
+
 <style is:global>
   html,
   body {
@@ -37,7 +40,7 @@ import Footer from "../modules/Footer.astro";
     font-family: "Poppins";
     @apply bg-azulOscuro;
     @apply text-white;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
   .dynamic-container {
     max-width: 1250px;

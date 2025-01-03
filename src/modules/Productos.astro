@@ -1,9 +1,10 @@
 ---
 import ProductoCardPrincipal from "../components/ProductoCardPrincipal.astro";
-import ProductoCardSecondary from "../components/ProductoCardSecondary.astro";
+import ProductoCardSecondary from "../components/ProductoCardSecondary";
+import { cardsProductosSecondary } from "../utils/infoProductosCardSecondary";
 ---
 
-<section class="dynamic-container">
+<section id="productos" class="dynamic-container">
   <header class="flex flex-col justify-between items-center my-20">
     <h3 class="text-3xl font-bold">Nuestros Productos</h3>
     <div class="w-[200px] h-[2px] bg-verde my-2"></div>
@@ -52,30 +53,11 @@ import ProductoCardSecondary from "../components/ProductoCardSecondary.astro";
       <div class="w-[100px] h-[1px] bg-verde my-5"></div>
     </div>
     <aside class="flex-grid-productos-cards">
-      <ProductoCardSecondary
-        title="Red Hat"
-        imgSrc="/icons/productos/red-hat.png"
-      />
-      <ProductoCardSecondary
-        title="Suse Linux"
-        imgSrc="/icons/productos/linux.png"
-      />
-      <ProductoCardSecondary
-        title="Servidores Cloud"
-        imgSrc="/icons/productos/servidores-cloud.png"
-      />
-      <ProductoCardSecondary
-        title="Storage"
-        imgSrc="/icons/productos/storage-icon.png"
-      />
-      <ProductoCardSecondary
-        title="Certificados Digitales"
-        imgSrc="/icons/productos/certificados-icon.png"
-      />
-      <ProductoCardSecondary
-        title="Zextras Carbonio"
-        imgSrc="/icons/productos/zextras.png"
-      />
+      {
+        cardsProductosSecondary.map((card) => {
+          return <ProductoCardSecondary client:load infoCardProducto={card} />;
+        })
+      }
     </aside>
   </footer>
 </section>

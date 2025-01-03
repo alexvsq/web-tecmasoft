@@ -1,7 +1,7 @@
 <div class="py-10">
   <section class="bg-verde">
     <div
-      class="dynamic-container flex flex-col md:flex-row justify-between py-12"
+      class="dynamic-container flex flex-col gap-10 md:flex-row justify-between py-12"
     >
       <div class="pt-5">
         <img
@@ -15,8 +15,152 @@
       </div>
 
       <aside>
-        <div class="bg-white h-[300px] w-full md:w-[600px]"></div>
+        <div
+          class="flex flex-col justify-between bg-white h-[250px] w-full md:w-[500px] px-4 py-6 rounded-2xl"
+        >
+          <p
+            id="text-testimonios"
+            class="text-azulOscuro font-semibold text-center"
+          >
+            Gracias a Tecmasoft hemos ahorrado en costos de infraestructura
+            tecnológica y hemos recibido atención de calidad, ayudándonos
+            proactivamente para que nuestro negocio siga creciendo.
+          </p>
+
+          <footer class="flex justify-between items-center">
+            <div class="flex items-center gap-4">
+              <img
+                id="user-testimonios"
+                class="w-14 rounded-full"
+                src="/testimonios/v-gamarra.jpg"
+                alt="v-gamarra"
+              />
+              <div>
+                <p id="text-testimonios-name" class="text-azulOscuro font-bold">
+                  Victor Gamarra
+                </p>
+                <p
+                  id="text-testimonios-company"
+                  class="text-xs text-textos max-w-[30ch]"
+                >
+                  Jefe de Infraestructura y Comunicaciones-Grupo Rockys
+                </p>
+              </div>
+            </div>
+            <aside class="flex justify-center items-center gap-4">
+              <img
+                id="arrow-testimonios-prev"
+                class="h-8 cursor-pointer"
+                src="icons/arrow-green.png"
+                alt="arrow"
+              />
+              <img
+                id="arrow-testimonios-next"
+                class="rotate-180 h-8 cursor-pointer"
+                src="icons/arrow-green.png"
+                alt="arrow"
+              />
+            </aside>
+          </footer>
+        </div>
       </aside>
     </div>
   </section>
 </div>
+
+<script>
+  const testimoniosInfo = [
+    {
+      texto:
+        "Gracias a Tecmasoft hemos ahorrado en costos de infraestructura tecnológica y hemos recibido atención de calidad, ayudándonos proactivamente para que nuestro negocio siga creciendo.",
+      nombre: "Victor Gamarra",
+      cargo: "Jefe de Infraestructura y Comunicaciones-Grupo Rockys",
+      image: "/testimonios/v-gamarra.jpg",
+    },
+    {
+      texto:
+        "Tecmasoft nos ha demostrado ser más que un proveedor; es un aliado estratégico en tecnología. La empresa está respaldada por asesoría personalizada, calidad en el trabajo y respuestas rápidas y oportunas a cada requerimiento.",
+      nombre: "Dante Bazán",
+      cargo: "Gerente TI - Mixercon",
+      image: "/testimonios/d-bazan.jpg",
+    },
+    {
+      texto:
+        "Tenemos más de 5 años en contacto con Tecmasoft. Siempre que hay un problema que no podemos resolver, lo escalamos a Tecmasoft y recibimos una solución eficiente y personalizada.",
+      nombre: "Anthony Paravé",
+      cargo: "Jefe de Sistemas - Medifarma",
+      image: "/testimonios/a-parave.jpg",
+    },
+  ];
+  document.addEventListener("astro:page-load", () => {
+    const btnPrev = document.getElementById(
+      "arrow-testimonios-prev"
+    ) as HTMLImageElement;
+    const btnNext = document.getElementById(
+      "arrow-testimonios-next"
+    ) as HTMLImageElement;
+
+    const textTestimonios = document.getElementById(
+      "text-testimonios"
+    ) as HTMLImageElement;
+    const textTestimoniosName = document.getElementById(
+      "text-testimonios-name"
+    ) as HTMLImageElement;
+    const textTestimoniosCompany = document.getElementById(
+      "text-testimonios-company"
+    ) as HTMLImageElement;
+    const userImage = document.getElementById(
+      "user-testimonios"
+    ) as HTMLImageElement;
+
+    const lengthTestimonios = testimoniosInfo.length;
+    let indexTestimoniosCurrent = 0;
+    let changeSlider = true;
+
+    function setInfoSlider(current: number) {
+      textTestimonios.innerHTML = testimoniosInfo[current].texto;
+      textTestimoniosName.innerHTML = testimoniosInfo[current].nombre;
+      textTestimoniosCompany.innerHTML = testimoniosInfo[current].cargo;
+      userImage.src = testimoniosInfo[current].image;
+    }
+
+    btnNext?.addEventListener("click", () => {
+      if (indexTestimoniosCurrent < lengthTestimonios - 1) {
+        indexTestimoniosCurrent++;
+        setInfoSlider(indexTestimoniosCurrent);
+      } else {
+        indexTestimoniosCurrent = 0;
+        setInfoSlider(indexTestimoniosCurrent);
+      }
+    });
+
+    btnPrev?.addEventListener("click", () => {
+      if (indexTestimoniosCurrent > 0) {
+        indexTestimoniosCurrent--;
+        setInfoSlider(indexTestimoniosCurrent);
+      } else {
+        indexTestimoniosCurrent = lengthTestimonios - 1;
+        setInfoSlider(indexTestimoniosCurrent);
+      }
+    });
+
+    btnNext?.addEventListener("mouseover", () => {
+      changeSlider = false;
+    });
+    btnPrev?.addEventListener("mouseover", () => {
+      changeSlider = false;
+    });
+    btnNext?.addEventListener("mouseout", () => {
+      changeSlider = true;
+    });
+    btnPrev?.addEventListener("mouseout", () => {
+      changeSlider = true;
+    });
+
+    setInterval(() => {
+      if (changeSlider) {
+        btnNext?.click();
+      }
+    }, 7000);
+  });
+</script>
