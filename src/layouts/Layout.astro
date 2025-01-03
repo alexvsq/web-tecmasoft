@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import { seoContent } from "../utils/seo.js";
 import "@fontsource/poppins";
 import Nav from "../modules/Nav.astro";
 import Footer from "../modules/Footer.astro";
@@ -17,6 +18,8 @@ import Footer from "../modules/Footer.astro";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={seoContent} />
+
     <ClientRouter />
     <title>Tecmasoft</title>
   </head>
